@@ -187,7 +187,7 @@ if (!prefersReducedMotion) {
     status.textContent = '';
 
     try {
-      const res = await fetch('https://formspree.io/f/xvgonbgd', {
+      const res = await fetch('https://formspree.io/f/xaeyyrdn', {
         method: 'POST',
         body: new FormData(form),
         headers: { Accept: 'application/json' }
