@@ -90,12 +90,20 @@
       <a href="https://www.linkedin.com/in/vasanth1602" class="btn btn--ghost" id="hero-linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
     </div>
 
-    <div class="hero-divider"></div>
-
-    <p style="font-size:0.82rem; color:var(--text-3); max-width:460px; line-height:1.6;">
-      M.Sc. Data Science · Periyar University<br>
-      DevSecOps Intern · SecIQ Technologies · Tamil Nadu, India
-    </p>
+    <div class="hero-context">
+      <div class="hero-context-item">
+        <div class="hero-context-num">3</div>
+        <div class="hero-context-label">engineering<br>case studies</div>
+      </div>
+      <div class="hero-context-item">
+        <div class="hero-context-num">6</div>
+        <div class="hero-context-label">documented<br>incident reports</div>
+      </div>
+      <div class="hero-context-item">
+        <div class="hero-context-num">Active</div>
+        <div class="hero-context-label">DevSecOps internship<br>SecIQ Technologies</div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -116,11 +124,39 @@
       </div>
       <p class="cs-problem">How do you turn a 30-minute manual AWS deployment workflow into a repeatable, automated platform?</p>
 
+      <!-- Full-width transform strip -->
+      <div class="cs-metrics-strip">
+        <div class="cs-metrics-strip-item">
+          <div class="cs-metrics-strip-value amber">~30 min</div>
+          <div class="cs-metrics-strip-label">manual AWS console</div>
+        </div>
+        <div class="cs-metrics-strip-item">
+          <div class="cs-metrics-strip-value">13 steps</div>
+          <div class="cs-metrics-strip-label">orchestration pipeline</div>
+        </div>
+        <div class="cs-metrics-strip-item">
+          <div class="cs-metrics-strip-value green">&lt;5 min</div>
+          <div class="cs-metrics-strip-label">automated end-to-end</div>
+        </div>
+        <div class="cs-metrics-strip-item">
+          <div class="cs-metrics-strip-value blue">AWS EC2</div>
+          <div class="cs-metrics-strip-label">deployment target</div>
+        </div>
+      </div>
+
       <div class="cs-body cs-body--wide">
-        <div>
+        <div style="display:flex; flex-direction:column; gap:0.75rem;">
           <div class="cs-visual" id="ml-img" role="button" tabindex="0" aria-label="Expand ML Platform dashboard screenshot">
             <img src="assets/ml-dashboard.png" alt="DeployML dashboard showing deployment overview with active instances" loading="lazy" />
             <div class="cs-visual-caption">DeployML — self-service deployment dashboard</div>
+          </div>
+          <div class="cs-visual" id="ml-deploy-img" role="button" tabindex="0" aria-label="Expand ML Platform deployment view screenshot">
+            <img src="assets/ml-deployment.png" alt="DeployML deployment in progress — live status streaming over Socket.IO" loading="lazy" />
+            <div class="cs-visual-caption">Deployment in progress — real-time status via Socket.IO</div>
+          </div>
+          <div class="cs-tradeoffs" style="margin-bottom:0;">
+            <div class="cs-tradeoffs-label">Architecture note</div>
+            <p>A Terraform-based production architecture (CloudFront → ALB → ECS Fargate → RDS) is <strong>designed and documented</strong> on the <code>feature/aws-production</code> branch. The current deployed orchestration runs against EC2 using boto3 + Paramiko. The IaC design represents the next evolution, not the current deployment.</p>
           </div>
         </div>
 
@@ -136,23 +172,6 @@
             <strong>boto3 for AWS provisioning</strong> and <strong>Paramiko for SSH-based remote execution</strong>.
             A PostgreSQL database tracks deployments and instance state.
           </p>
-
-          <div class="transform-visual">
-            <div class="transform-item">
-              <div class="transform-value before">~30 min</div>
-              <div class="transform-label">manual AWS console</div>
-            </div>
-            <div class="transform-arrow">→</div>
-            <div class="transform-item">
-              <div class="transform-value">13 steps</div>
-              <div class="transform-label">orchestration pipeline</div>
-            </div>
-            <div class="transform-arrow">→</div>
-            <div class="transform-item">
-              <div class="transform-value after">&lt;5 min</div>
-              <div class="transform-label">automated end-to-end</div>
-            </div>
-          </div>
 
           <div class="arch-flow">
             <div class="arch-flow-title">Orchestration pipeline</div>
@@ -178,11 +197,6 @@
                 <div class="arch-step-body"><div class="arch-step-name">Live URL returned</div><div class="arch-step-detail">Status streamed to dashboard via Socket.IO</div></div>
               </div>
             </div>
-          </div>
-
-          <div class="cs-tradeoffs">
-            <div class="cs-tradeoffs-label">Architecture note</div>
-            <p>A Terraform-based production architecture (CloudFront → ALB → ECS Fargate → RDS) is <strong>designed and documented</strong> on the <code>feature/aws-production</code> branch. The current deployed orchestration runs against EC2 using boto3 + Paramiko. The IaC design represents the next evolution, not the current deployment.</p>
           </div>
 
           <div class="cs-tags">
@@ -215,6 +229,26 @@
         <h3 class="cs-title">AWS DevOps Platform</h3>
       </div>
       <p class="cs-problem">What does a complete cloud-to-production engineering path look like — infrastructure, delivery, observability, and reliability testing in one project?</p>
+
+      <!-- k6 load test results — full width for visual weight -->
+      <div class="cs-metrics-strip">
+        <div class="cs-metrics-strip-item">
+          <div class="cs-metrics-strip-value green">0.00%</div>
+          <div class="cs-metrics-strip-label">k6 error rate</div>
+        </div>
+        <div class="cs-metrics-strip-item">
+          <div class="cs-metrics-strip-value">1,470</div>
+          <div class="cs-metrics-strip-label">requests sent</div>
+        </div>
+        <div class="cs-metrics-strip-item">
+          <div class="cs-metrics-strip-value">20</div>
+          <div class="cs-metrics-strip-label">virtual users</div>
+        </div>
+        <div class="cs-metrics-strip-item">
+          <div class="cs-metrics-strip-value blue">100%</div>
+          <div class="cs-metrics-strip-label">checks passed</div>
+        </div>
+      </div>
 
       <div class="cs-body">
         <div class="cs-content">
@@ -255,30 +289,6 @@
             </div>
           </div>
 
-          <div class="cs-metrics">
-            <div class="cs-metric-item">
-              <div class="cs-metric-value green">0.00%</div>
-              <div class="cs-metric-label">error rate</div>
-            </div>
-            <div class="cs-metric-item">
-              <div class="cs-metric-value">1,470</div>
-              <div class="cs-metric-label">k6 requests</div>
-            </div>
-            <div class="cs-metric-item">
-              <div class="cs-metric-value">20</div>
-              <div class="cs-metric-label">virtual users</div>
-            </div>
-            <div class="cs-metric-item">
-              <div class="cs-metric-value blue">100%</div>
-              <div class="cs-metric-label">checks passed</div>
-            </div>
-          </div>
-
-          <div class="cs-tradeoffs">
-            <div class="cs-tradeoffs-label">Engineering trade-off</div>
-            <p><strong>Current:</strong> SSH-based deployment from GitHub Actions. Simple, transparent, works for this scope.<br><strong>Known limitation:</strong> SSH keys in CI, no HTTPS, single-instance.<br><strong>Production path:</strong> AWS SSM Session Manager, ALB + ACM certificate, Auto Scaling Group.</p>
-          </div>
-
           <div class="cs-tags">
             <span class="tag">Terraform</span>
             <span class="tag tag--blue">AWS EC2</span>
@@ -306,6 +316,10 @@
           <div class="cs-visual" id="aws-img" role="button" tabindex="0" aria-label="Expand AWS architecture diagram">
             <img src="assets/aws-architecture.png" alt="AWS DevOps Platform infrastructure architecture showing VPC, EC2, CloudWatch, and CI/CD flow" loading="lazy" />
             <div class="cs-visual-caption">AWS infrastructure — Terraform-provisioned stack</div>
+          </div>
+          <div class="cs-tradeoffs" style="margin-bottom:0;">
+            <div class="cs-tradeoffs-label">Engineering trade-off</div>
+            <p><strong>Current:</strong> SSH-based deployment from GitHub Actions. Simple, transparent, works for this scope.<br><strong>Known limitation:</strong> SSH keys in CI, no HTTPS, single-instance.<br><strong>Production path:</strong> AWS SSM Session Manager, ALB + ACM certificate, Auto Scaling Group.</p>
           </div>
         </div>
       </div>
@@ -351,206 +365,6 @@
               <div class="phase-badge upcoming">Upcoming</div>
             </div>
           </div>
-
-          <div class="section-label" style="margin-top:0.5rem;">6 documented incident reports — click to expand</div>
-
-          <div class="incident-board" id="incident-board">
-
-            <!-- INC-001 -->
-            <div class="incident-card" id="inc-001">
-              <div class="incident-card-header" role="button" tabindex="0" aria-expanded="false" aria-controls="inc-001-body">
-                <span class="inc-id">INC-001</span>
-                <span class="inc-title">PostgreSQL container stopped — DNS deregistered, hostname unresolvable</span>
-                <span class="inc-status">Resolved</span>
-                <span class="inc-chevron" aria-hidden="true">▼</span>
-              </div>
-              <div class="incident-card-body" id="inc-001-body" role="region">
-                <div class="inc-meta">
-                  <span class="tag tag--amber">High</span>
-                  <span class="tag">Phase 1</span>
-                  <span class="tag">Intentional simulation</span>
-                </div>
-                <div class="inc-section">
-                  <div class="inc-section-label">Symptom</div>
-                  <div class="inc-section-content">All DB-dependent endpoints → <code>500</code>. Frontend loaded. <code>GET /api/auth/me</code> worked (JWT, no DB call). Redis rate limiting active. Container status showed all containers "Up" — monitoring would have shown green while users saw 500s.</div>
-                </div>
-                <div class="inc-section">
-                  <div class="inc-section-label">Root cause</div>
-                  <div class="inc-section-content">When a Docker container stops, it deregisters from the internal bridge network DNS. The hostname <code>postgres</code> became unresolvable — not "connection refused" but "no address associated with hostname." The backend never attempts TCP; DNS fails first.</div>
-                </div>
-                <div class="inc-section">
-                  <div class="inc-section-label">Lesson</div>
-                  <div class="inc-section-content">Docker DNS fails before TCP. Static health checks that return <code>200 OK</code> without testing the database are liveness probes — not readiness probes. A green health endpoint during a DB outage is actively misleading.</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- INC-002 -->
-            <div class="incident-card" id="inc-002">
-              <div class="incident-card-header" role="button" tabindex="0" aria-expanded="false" aria-controls="inc-002-body">
-                <span class="inc-id">INC-002</span>
-                <span class="inc-title">DB_HOST=localhost — total outage with zero infrastructure failure</span>
-                <span class="inc-status">Resolved</span>
-                <span class="inc-chevron" aria-hidden="true">▼</span>
-              </div>
-              <div class="incident-card-body" id="inc-002-body" role="region">
-                <div class="inc-meta">
-                  <span class="tag" style="color:var(--red);border-color:rgba(239,68,68,0.25);background:var(--red-dim);">Critical</span>
-                  <span class="tag">Phase 1</span>
-                  <span class="tag">Misconfiguration</span>
-                </div>
-                <div class="inc-section">
-                  <div class="inc-section-label">Symptom</div>
-                  <div class="inc-section-content">Backend exited at startup — never accepted a single request. NGINX returned <code>502 Bad Gateway</code> on every API call. PostgreSQL, Redis, NGINX, and frontend were all fully healthy. Infrastructure was green; application was dead.</div>
-                </div>
-                <div class="inc-section">
-                  <div class="inc-section-label">Root cause</div>
-                  <div class="inc-section-content"><code>DB_HOST=localhost</code> set instead of <code>DB_HOST=postgres</code>. Inside a Docker container, <code>localhost</code> resolves to the container's own loopback (<code>127.0.0.1</code>). PostgreSQL was running in a separate network namespace, reachable only by its service name. DNS succeeded; TCP was refused. Backend startup event failed; Uvicorn exited.</div>
-                </div>
-                <div class="inc-section">
-                  <div class="inc-section-label">Lesson</div>
-                  <div class="inc-section-content">All infrastructure healthy + application down = configuration error. <code>502</code> means dead upstream (check container state). <code>500</code> means broken upstream (check application logs). The error code is the first debugging signal. <code>--force-recreate</code> is required for env var changes — <code>restart</code> does not apply them.</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- INC-003 -->
-            <div class="incident-card" id="inc-003">
-              <div class="incident-card-header" role="button" tabindex="0" aria-expanded="false" aria-controls="inc-003-body">
-                <span class="inc-id">INC-003</span>
-                <span class="inc-title">NGINX stripped WebSocket Upgrade headers — real-time feature silently broken</span>
-                <span class="inc-status">Resolved</span>
-                <span class="inc-chevron" aria-hidden="true">▼</span>
-              </div>
-              <div class="incident-card-body" id="inc-003-body" role="region">
-                <div class="inc-meta">
-                  <span class="tag tag--amber">High</span>
-                  <span class="tag">Phase 2</span>
-                  <span class="tag">Silent degradation</span>
-                </div>
-                <div class="inc-section">
-                  <div class="inc-section-label">Symptom</div>
-                  <div class="inc-section-content">Live Results page showed no real-time vote updates. All other features worked. No 500 errors. Dashboards green. Users would only discover the failure by noticing vote counts not updating — no alert would catch this.</div>
-                </div>
-                <div class="inc-section">
-                  <div class="inc-section-label">Root cause</div>
-                  <div class="inc-section-content">NGINX strips hop-by-hop headers (including <code>Upgrade</code> and <code>Connection</code>) before forwarding requests upstream. The browser sent a WebSocket upgrade request; NGINX removed the headers; the backend received a plain HTTP request and refused the upgrade. Fix: <code>proxy_set_header Upgrade $http_upgrade;</code> and <code>proxy_http_version 1.1;</code> in NGINX config.</div>
-                </div>
-                <div class="inc-section">
-                  <div class="inc-section-label">Lesson</div>
-                  <div class="inc-section-content">Silent partial failures are harder than total outages. Dashboards stayed green. The feature worked in local dev (no NGINX). Production added a proxy layer that broke one specific protocol. Test the full stack — not just the application in isolation.</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- INC-004 -->
-            <div class="incident-card" id="inc-004">
-              <div class="incident-card-header" role="button" tabindex="0" aria-expanded="false" aria-controls="inc-004-body">
-                <span class="inc-id">INC-004</span>
-                <span class="inc-title">CI build failed — Dockerfile error local cache had hidden for weeks</span>
-                <span class="inc-status">Resolved</span>
-                <span class="inc-chevron" aria-hidden="true">▼</span>
-              </div>
-              <div class="incident-card-body" id="inc-004-body" role="region">
-                <div class="inc-meta">
-                  <span class="tag tag--amber">High</span>
-                  <span class="tag">Phase 3</span>
-                  <span class="tag">Intentional simulation</span>
-                </div>
-                <div class="inc-section">
-                  <div class="inc-section-label">Symptom</div>
-                  <div class="inc-section-content">CI pipeline failed at the Docker build step. The same <code>docker build</code> succeeded locally. The PR was blocked from merging.</div>
-                </div>
-                <div class="inc-section">
-                  <div class="inc-section-label">Root cause</div>
-                  <div class="inc-section-content">Local Docker build used a cached layer containing a previously valid dependency. CI builds from scratch with no cache — it hit an actual package resolution error that local cache had masked. The Dockerfile had a latent defect that only showed up in a clean build environment.</div>
-                </div>
-                <div class="inc-section">
-                  <div class="inc-section-label">Lesson</div>
-                  <div class="inc-section-content">CI is a clean-room environment — it proves your build is reproducible, not just that it worked on your machine. "Works locally" is not evidence of a correct Dockerfile. Periodically build with <code>--no-cache</code> in local dev to find hidden dependency issues before CI does.</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- INC-005 -->
-            <div class="incident-card" id="inc-005">
-              <div class="incident-card-header" role="button" tabindex="0" aria-expanded="false" aria-controls="inc-005-body">
-                <span class="inc-id">INC-005</span>
-                <span class="inc-title">Smoke test failed — wrong GitHub Secret name, silent misconfiguration</span>
-                <span class="inc-status">Resolved</span>
-                <span class="inc-chevron" aria-hidden="true">▼</span>
-              </div>
-              <div class="incident-card-body" id="inc-005-body" role="region">
-                <div class="inc-meta">
-                  <span class="tag tag--amber">High</span>
-                  <span class="tag">Phase 3</span>
-                  <span class="tag">Misconfiguration</span>
-                </div>
-                <div class="inc-section">
-                  <div class="inc-section-label">Symptom</div>
-                  <div class="inc-section-content">CI smoke test step failed with an authentication error. The application code and Docker build were both correct. The pipeline passed tests and build, then failed at smoke test.</div>
-                </div>
-                <div class="inc-section">
-                  <div class="inc-section-label">Root cause</div>
-                  <div class="inc-section-content">The workflow referenced a GitHub Secret by an incorrect name. GitHub does not error on missing secrets — it silently injects an empty string. The application received an empty database password, failed to authenticate, and the smoke test correctly detected the failure.</div>
-                </div>
-                <div class="inc-section">
-                  <div class="inc-section-label">Lesson</div>
-                  <div class="inc-section-content">Secret name mismatches are invisible until runtime. GitHub won't warn you. Add secret validation at pipeline startup — fail fast with a clear message if a required secret is empty, rather than letting downstream steps fail with cryptic errors.</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- INC-006 -->
-            <div class="incident-card" id="inc-006">
-              <div class="incident-card-header" role="button" tabindex="0" aria-expanded="false" aria-controls="inc-006-body">
-                <span class="inc-id">INC-006</span>
-                <span class="inc-title">Pipeline never triggered — wrong branch in workflow trigger</span>
-                <span class="inc-status">Resolved</span>
-                <span class="inc-chevron" aria-hidden="true">▼</span>
-              </div>
-              <div class="incident-card-body" id="inc-006-body" role="region">
-                <div class="inc-meta">
-                  <span class="tag" style="color:var(--red);border-color:rgba(239,68,68,0.25);background:var(--red-dim);">Critical</span>
-                  <span class="tag">Phase 3</span>
-                  <span class="tag">Silent failure</span>
-                </div>
-                <div class="inc-section">
-                  <div class="inc-section-label">Symptom</div>
-                  <div class="inc-section-content">Code pushed. PR opened. Zero CI workflow runs appeared. No red status, no yellow status — nothing. The PR showed as ready to merge with no quality gate. Any broken code could have been merged without detection.</div>
-                </div>
-                <div class="inc-section">
-                  <div class="inc-section-label">Root cause</div>
-                  <div class="inc-section-content">Workflow trigger changed from <code>branches: [main]</code> to <code>branches: [production]</code>. <code>production</code> does not exist as a branch. The YAML is syntactically valid — GitHub parses it without error. The trigger simply never fires because no PR ever targets a <code>production</code> branch.</div>
-                </div>
-                <div class="inc-section">
-                  <div class="inc-section-label">Lesson</div>
-                  <div class="inc-section-content">A pipeline that fails tells you something is wrong. A pipeline that doesn't run tells you nothing — and you won't notice it isn't running. Validate CI trigger configuration on every workflow change. Require status checks in branch protection rules — a missing check should be as alarming as a failing one.</div>
-                </div>
-              </div>
-            </div>
-
-          </div><!-- /.incident-board -->
-
-          <div style="margin-top:1.5rem;" class="cs-tags">
-            <span class="tag">Docker Compose V2</span>
-            <span class="tag">NGINX</span>
-            <span class="tag">GitHub Actions</span>
-            <span class="tag">FastAPI</span>
-            <span class="tag">React 18</span>
-            <span class="tag tag--amber">Redis</span>
-            <span class="tag">PostgreSQL</span>
-            <span class="tag" style="color:var(--red);border-color:rgba(239,68,68,0.2);">AES-256</span>
-            <span class="tag">JWT</span>
-            <span class="tag">Socket.IO</span>
-          </div>
-
-          <div class="cs-links">
-            <a href="https://github.com/Vasanth1602/votesecure-devops-journey" class="btn btn--outline" id="votesecure-github" target="_blank" rel="noopener noreferrer">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-              View Repository
-            </a>
-          </div>
         </div>
 
         <div>
@@ -560,10 +374,213 @@
           </div>
         </div>
       </div>
+
+      <!-- Full-width incident board below the two-column grid -->
+      <div class="section-label" style="margin-top:2rem; margin-bottom:1rem;">6 documented incident reports — click to expand</div>
+
+      <div class="incident-board" id="incident-board">
+
+        <!-- INC-001 -->
+        <div class="incident-card" id="inc-001">
+          <div class="incident-card-header" role="button" tabindex="0" aria-expanded="false" aria-controls="inc-001-body">
+            <span class="inc-id">INC-001</span>
+            <span class="inc-title">PostgreSQL container stopped — DNS deregistered, hostname unresolvable</span>
+            <span class="inc-status">Resolved</span>
+            <span class="inc-chevron" aria-hidden="true">▼</span>
+          </div>
+          <div class="incident-card-body" id="inc-001-body" role="region">
+            <div class="inc-meta">
+              <span class="tag tag--amber">High</span>
+              <span class="tag">Phase 1</span>
+              <span class="tag">Intentional simulation</span>
+            </div>
+            <div class="inc-section">
+              <div class="inc-section-label">Symptom</div>
+              <div class="inc-section-content">All DB-dependent endpoints → <code>500</code>. Frontend loaded. <code>GET /api/auth/me</code> worked (JWT, no DB call). Redis rate limiting active. Container status showed all containers "Up" — monitoring would have shown green while users saw 500s.</div>
+            </div>
+            <div class="inc-section">
+              <div class="inc-section-label">Root cause</div>
+              <div class="inc-section-content">When a Docker container stops, it deregisters from the internal bridge network DNS. The hostname <code>postgres</code> became unresolvable — not "connection refused" but "no address associated with hostname." The backend never attempts TCP; DNS fails first.</div>
+            </div>
+            <div class="inc-section">
+              <div class="inc-section-label">Lesson</div>
+              <div class="inc-section-content">Docker DNS fails before TCP. Static health checks that return <code>200 OK</code> without testing the database are liveness probes — not readiness probes. A green health endpoint during a DB outage is actively misleading.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- INC-002 -->
+        <div class="incident-card" id="inc-002">
+          <div class="incident-card-header" role="button" tabindex="0" aria-expanded="false" aria-controls="inc-002-body">
+            <span class="inc-id">INC-002</span>
+            <span class="inc-title">DB_HOST=localhost — total outage with zero infrastructure failure</span>
+            <span class="inc-status">Resolved</span>
+            <span class="inc-chevron" aria-hidden="true">▼</span>
+          </div>
+          <div class="incident-card-body" id="inc-002-body" role="region">
+            <div class="inc-meta">
+              <span class="tag" style="color:var(--red);border-color:rgba(239,68,68,0.25);background:var(--red-dim);">Critical</span>
+              <span class="tag">Phase 1</span>
+              <span class="tag">Misconfiguration</span>
+            </div>
+            <div class="inc-section">
+              <div class="inc-section-label">Symptom</div>
+              <div class="inc-section-content">Backend exited at startup — never accepted a single request. NGINX returned <code>502 Bad Gateway</code> on every API call. PostgreSQL, Redis, NGINX, and frontend were all fully healthy. Infrastructure was green; application was dead.</div>
+            </div>
+            <div class="inc-section">
+              <div class="inc-section-label">Root cause</div>
+              <div class="inc-section-content"><code>DB_HOST=localhost</code> set instead of <code>DB_HOST=postgres</code>. Inside a Docker container, <code>localhost</code> resolves to the container's own loopback (<code>127.0.0.1</code>). PostgreSQL was running in a separate network namespace, reachable only by its service name. DNS succeeded; TCP was refused. Backend startup event failed; Uvicorn exited.</div>
+            </div>
+            <div class="inc-section">
+              <div class="inc-section-label">Lesson</div>
+              <div class="inc-section-content">All infrastructure healthy + application down = configuration error. <code>502</code> means dead upstream (check container state). <code>500</code> means broken upstream (check application logs). The error code is the first debugging signal. <code>--force-recreate</code> is required for env var changes — <code>restart</code> does not apply them.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- INC-003 -->
+        <div class="incident-card" id="inc-003">
+          <div class="incident-card-header" role="button" tabindex="0" aria-expanded="false" aria-controls="inc-003-body">
+            <span class="inc-id">INC-003</span>
+            <span class="inc-title">NGINX stripped WebSocket Upgrade headers — real-time feature silently broken</span>
+            <span class="inc-status">Resolved</span>
+            <span class="inc-chevron" aria-hidden="true">▼</span>
+          </div>
+          <div class="incident-card-body" id="inc-003-body" role="region">
+            <div class="inc-meta">
+              <span class="tag tag--amber">High</span>
+              <span class="tag">Phase 2</span>
+              <span class="tag">Silent degradation</span>
+            </div>
+            <div class="inc-section">
+              <div class="inc-section-label">Symptom</div>
+              <div class="inc-section-content">Live Results page showed no real-time vote updates. All other features worked. No 500 errors. Dashboards green. Users would only discover the failure by noticing vote counts not updating — no alert would catch this.</div>
+            </div>
+            <div class="inc-section">
+              <div class="inc-section-label">Root cause</div>
+              <div class="inc-section-content">NGINX strips hop-by-hop headers (including <code>Upgrade</code> and <code>Connection</code>) before forwarding requests upstream. The browser sent a WebSocket upgrade request; NGINX removed the headers; the backend received a plain HTTP request and refused the upgrade. Fix: <code>proxy_set_header Upgrade $http_upgrade;</code> and <code>proxy_http_version 1.1;</code> in NGINX config.</div>
+            </div>
+            <div class="inc-section">
+              <div class="inc-section-label">Lesson</div>
+              <div class="inc-section-content">Silent partial failures are harder than total outages. Dashboards stayed green. The feature worked in local dev (no NGINX). Production added a proxy layer that broke one specific protocol. Test the full stack — not just the application in isolation.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- INC-004 -->
+        <div class="incident-card" id="inc-004">
+          <div class="incident-card-header" role="button" tabindex="0" aria-expanded="false" aria-controls="inc-004-body">
+            <span class="inc-id">INC-004</span>
+            <span class="inc-title">CI build failed — Dockerfile error local cache had hidden for weeks</span>
+            <span class="inc-status">Resolved</span>
+            <span class="inc-chevron" aria-hidden="true">▼</span>
+          </div>
+          <div class="incident-card-body" id="inc-004-body" role="region">
+            <div class="inc-meta">
+              <span class="tag tag--amber">High</span>
+              <span class="tag">Phase 3</span>
+              <span class="tag">Intentional simulation</span>
+            </div>
+            <div class="inc-section">
+              <div class="inc-section-label">Symptom</div>
+              <div class="inc-section-content">CI pipeline failed at the Docker build step. The same <code>docker build</code> succeeded locally. The PR was blocked from merging.</div>
+            </div>
+            <div class="inc-section">
+              <div class="inc-section-label">Root cause</div>
+              <div class="inc-section-content">Local Docker build used a cached layer containing a previously valid dependency. CI builds from scratch with no cache — it hit an actual package resolution error that local cache had masked. The Dockerfile had a latent defect that only showed up in a clean build environment.</div>
+            </div>
+            <div class="inc-section">
+              <div class="inc-section-label">Lesson</div>
+              <div class="inc-section-content">CI is a clean-room environment — it proves your build is reproducible, not just that it worked on your machine. "Works locally" is not evidence of a correct Dockerfile. Periodically build with <code>--no-cache</code> in local dev to find hidden dependency issues before CI does.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- INC-005 -->
+        <div class="incident-card" id="inc-005">
+          <div class="incident-card-header" role="button" tabindex="0" aria-expanded="false" aria-controls="inc-005-body">
+            <span class="inc-id">INC-005</span>
+            <span class="inc-title">Smoke test failed — wrong GitHub Secret name, silent misconfiguration</span>
+            <span class="inc-status">Resolved</span>
+            <span class="inc-chevron" aria-hidden="true">▼</span>
+          </div>
+          <div class="incident-card-body" id="inc-005-body" role="region">
+            <div class="inc-meta">
+              <span class="tag tag--amber">High</span>
+              <span class="tag">Phase 3</span>
+              <span class="tag">Misconfiguration</span>
+            </div>
+            <div class="inc-section">
+              <div class="inc-section-label">Symptom</div>
+              <div class="inc-section-content">CI smoke test step failed with an authentication error. The application code and Docker build were both correct. The pipeline passed tests and build, then failed at smoke test.</div>
+            </div>
+            <div class="inc-section">
+              <div class="inc-section-label">Root cause</div>
+              <div class="inc-section-content">The workflow referenced a GitHub Secret by an incorrect name. GitHub does not error on missing secrets — it silently injects an empty string. The application received an empty database password, failed to authenticate, and the smoke test correctly detected the failure.</div>
+            </div>
+            <div class="inc-section">
+              <div class="inc-section-label">Lesson</div>
+              <div class="inc-section-content">Secret name mismatches are invisible until runtime. GitHub won't warn you. Add secret validation at pipeline startup — fail fast with a clear message if a required secret is empty, rather than letting downstream steps fail with cryptic errors.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- INC-006 -->
+        <div class="incident-card" id="inc-006">
+          <div class="incident-card-header" role="button" tabindex="0" aria-expanded="false" aria-controls="inc-006-body">
+            <span class="inc-id">INC-006</span>
+            <span class="inc-title">Pipeline never triggered — wrong branch in workflow trigger</span>
+            <span class="inc-status">Resolved</span>
+            <span class="inc-chevron" aria-hidden="true">▼</span>
+          </div>
+          <div class="incident-card-body" id="inc-006-body" role="region">
+            <div class="inc-meta">
+              <span class="tag" style="color:var(--red);border-color:rgba(239,68,68,0.25);background:var(--red-dim);">Critical</span>
+              <span class="tag">Phase 3</span>
+              <span class="tag">Silent failure</span>
+            </div>
+            <div class="inc-section">
+              <div class="inc-section-label">Symptom</div>
+              <div class="inc-section-content">Code pushed. PR opened. Zero CI workflow runs appeared. No red status, no yellow status — nothing. The PR showed as ready to merge with no quality gate. Any broken code could have been merged without detection.</div>
+            </div>
+            <div class="inc-section">
+              <div class="inc-section-label">Root cause</div>
+              <div class="inc-section-content">Workflow trigger changed from <code>branches: [main]</code> to <code>branches: [production]</code>. <code>production</code> does not exist as a branch. The YAML is syntactically valid — GitHub parses it without error. The trigger simply never fires because no PR ever targets a <code>production</code> branch.</div>
+            </div>
+            <div class="inc-section">
+              <div class="inc-section-label">Lesson</div>
+              <div class="inc-section-content">A pipeline that fails tells you something is wrong. A pipeline that doesn't run tells you nothing — and you won't notice it isn't running. Validate CI trigger configuration on every workflow change. Require status checks in branch protection rules — a missing check should be as alarming as a failing one.</div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.incident-board -->
+
+      <div style="margin-top:1.5rem;" class="cs-tags">
+        <span class="tag">Docker Compose V2</span>
+        <span class="tag">NGINX</span>
+        <span class="tag">GitHub Actions</span>
+        <span class="tag">FastAPI</span>
+        <span class="tag">React 18</span>
+        <span class="tag tag--amber">Redis</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag" style="color:var(--red);border-color:rgba(239,68,68,0.2);">AES-256</span>
+        <span class="tag">JWT</span>
+        <span class="tag">Socket.IO</span>
+      </div>
+
+      <div class="cs-links">
+        <a href="https://github.com/Vasanth1602/votesecure-devops-journey" class="btn btn--outline" id="votesecure-github" target="_blank" rel="noopener noreferrer">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          View Repository
+        </a>
+      </div>
     </div>
 
   </div><!-- /.container -->
 </section>
+
+
 
 <!-- ═══════════════════════════ HOW I WORK ════════════════════ -->
 <section id="how-i-work">
