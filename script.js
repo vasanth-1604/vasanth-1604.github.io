@@ -29,18 +29,38 @@ if (!prefersReducedMotion) {
 (function () {
   const hamburger  = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('nav-mobile');
+  const backdrop   = document.getElementById('nav-backdrop');
   if (!hamburger || !mobileMenu) return;
 
+  function openNav() {
+    mobileMenu.classList.add('open');
+    backdrop && backdrop.classList.add('open');
+    document.body.classList.add('nav-open');
+    hamburger.setAttribute('aria-expanded', 'true');
+  }
+
+  function closeNav() {
+    mobileMenu.classList.remove('open');
+    backdrop && backdrop.classList.remove('open');
+    document.body.classList.remove('nav-open');
+    hamburger.setAttribute('aria-expanded', 'false');
+  }
+
   hamburger.addEventListener('click', () => {
-    const isOpen = mobileMenu.classList.toggle('open');
-    hamburger.setAttribute('aria-expanded', String(isOpen));
+    mobileMenu.classList.contains('open') ? closeNav() : openNav();
   });
 
+  // Close when a nav link is tapped
   mobileMenu.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => {
-      mobileMenu.classList.remove('open');
-      hamburger.setAttribute('aria-expanded', 'false');
-    });
+    a.addEventListener('click', closeNav);
+  });
+
+  // Close when backdrop is tapped
+  backdrop && backdrop.addEventListener('click', closeNav);
+
+  // Close on Escape
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && mobileMenu.classList.contains('open')) closeNav();
   });
 })();
 
