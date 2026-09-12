@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vasanth A — DevOps & Cloud Engineer</title>
-  <meta name="description" content="Portfolio of Vasanth A — DevOps and Cloud Engineer. AWS, Terraform, Docker, CI/CD, DevSecOps. Building infrastructure and investigating what happens when it fails." />
-  <meta name="keywords" content="DevOps Engineer, Cloud Engineer, AWS, Terraform, Docker, GitHub Actions, CI/CD, DevSecOps" />
+  <meta name="description"
+    content="Portfolio of Vasanth A — DevOps and Cloud Engineer. AWS, Terraform, Docker, CI/CD, DevSecOps. Building infrastructure and investigating what happens when it fails." />
+  <meta name="keywords"
+    content="DevOps Engineer, Cloud Engineer, AWS, Terraform, Docker, GitHub Actions, CI/CD, DevSecOps" />
   <meta name="author" content="Vasanth A" />
   <link rel="canonical" href="https://vasanth1602.github.io" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Vasanth A — DevOps & Cloud Engineer" />
-  <meta property="og:description" content="I build infrastructure, automate delivery, and investigate what happens when systems fail." />
+  <meta property="og:description"
+    content="I build infrastructure, automate delivery, and investigate what happens when systems fail." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://vasanth1602.github.io" />
 
@@ -23,958 +27,1155 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<!-- ═══════════════════════════ NAV ═══════════════════════════ -->
-<nav role="navigation" aria-label="Main navigation">
-  <div class="nav-logo">vasanth<span>.dev</span></div>
+  <!-- ═══════════════════════════ NAV ═══════════════════════════ -->
+  <nav role="navigation" aria-label="Main navigation">
+    <div class="nav-logo">vasanth<span>.dev</span></div>
 
-  <ul class="nav-links" role="list">
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#how-i-work">How I Work</a></li>
-    <li><a href="#stack">Stack</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#contact" class="nav-cta">Contact</a></li>
-  </ul>
+    <ul class="nav-links" role="list">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#how-i-work">How I Work</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
 
-  <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-mobile">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-mobile">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-<nav class="nav-mobile" id="nav-mobile" aria-label="Mobile navigation">
-  <a href="#projects">Projects</a>
-  <a href="#how-i-work">How I Work</a>
-  <a href="#stack">Stack</a>
-  <a href="#experience">Experience</a>
-  <a href="#education">Education</a>
-  <a href="#contact">Contact</a>
-</nav>
-<div class="nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
+  <nav class="nav-mobile" id="nav-mobile" aria-label="Mobile navigation">
+    <a href="#projects">Projects</a>
+    <a href="#how-i-work">How I Work</a>
+    <a href="#stack">Stack</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
 
-<!-- ═══════════════════════════ HERO ══════════════════════════ -->
-<section id="hero" aria-label="Introduction">
-  <div class="hero-inner">
-    <div class="hero-eyebrow">Open to DevOps / Cloud / DevSecOps roles</div>
+  <!-- ═══════════════════════════ HERO ══════════════════════════ -->
+  <section id="hero" aria-label="Introduction">
+    <div class="hero-inner">
+      <div class="hero-eyebrow">Open to DevOps / Cloud / DevSecOps roles</div>
 
-    <h1 class="hero-name">
-      Vasanth A<span class="dim">.</span>
-    </h1>
+      <h1 class="hero-name">
+        Vasanth A<span class="dim">.</span>
+      </h1>
 
-    <div class="hero-role">DevOps / Cloud Engineer</div>
+      <div class="hero-role">DevOps / Cloud Engineer</div>
 
-    <p class="hero-statement">
-      I build infrastructure, automate delivery,<br>
-      and <strong>investigate what happens when systems fail</strong>.
-    </p>
+      <p class="hero-statement">
+        I build infrastructure, automate delivery,<br>
+        and <strong>investigate what happens when systems fail</strong>.
+      </p>
 
-    <div class="hero-stack">
-      <span class="tag tag--blue">AWS</span>
-      <span class="tag">Terraform</span>
-      <span class="tag">Docker</span>
-      <span class="tag">GitHub Actions</span>
-      <span class="tag">Jenkins</span>
-      <span class="tag tag--amber">DevSecOps</span>
-    </div>
-
-    <div class="hero-actions">
-      <a href="#projects" class="btn btn--primary" id="hero-view-work">View Projects</a>
-      <a href="https://github.com/Vasanth1602" class="btn btn--outline" id="hero-github" target="_blank" rel="noopener noreferrer">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-        GitHub
-      </a>
-      <a href="assets/resume.pdf" class="btn btn--outline" id="hero-resume" download>Resume ↓</a>
-      <a href="https://www.linkedin.com/in/vasanth1602" class="btn btn--ghost" id="hero-linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
-    </div>
-
-    <div class="hero-context">
-      <div class="hero-context-item">
-        <div class="hero-context-num">3</div>
-        <div class="hero-context-label">engineering<br>case studies</div>
-      </div>
-      <div class="hero-context-item">
-        <div class="hero-context-num">6</div>
-        <div class="hero-context-label">documented<br>incident reports</div>
-      </div>
-      <div class="hero-context-item">
-        <div class="hero-context-num">Active</div>
-        <div class="hero-context-label">DevSecOps internship<br>SecIQ Technologies</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════ PROJECTS ══════════════════════ -->
-<section id="projects">
-  <div class="container">
-    <div class="section-header">
-      <div class="section-label">// Projects</div>
-      <h2 class="section-title">What I've Built</h2>
-      <p class="section-desc">Three systems, each built to understand something specific about infrastructure, delivery, and failure.</p>
-    </div>
-
-    <!-- ───────── PROJECT 1: ML Deployment Platform ─────────── -->
-    <div class="case-study reveal" id="project-ml">
-      <div class="cs-header">
-        <span class="cs-number">01</span>
-        <h3 class="cs-title">ML Deployment Platform</h3>
-      </div>
-      <p class="cs-problem">How do you turn a 30-minute manual AWS deployment workflow into a repeatable, automated platform?</p>
-
-      <!-- Full-width transform strip -->
-      <div class="cs-metrics-strip">
-        <div class="cs-metrics-strip-item">
-          <div class="cs-metrics-strip-value amber">~30 min</div>
-          <div class="cs-metrics-strip-label">manual AWS console</div>
-        </div>
-        <div class="cs-metrics-strip-item">
-          <div class="cs-metrics-strip-value">13 steps</div>
-          <div class="cs-metrics-strip-label">orchestration pipeline</div>
-        </div>
-        <div class="cs-metrics-strip-item">
-          <div class="cs-metrics-strip-value green">&lt;5 min</div>
-          <div class="cs-metrics-strip-label">automated end-to-end</div>
-        </div>
-        <div class="cs-metrics-strip-item">
-          <div class="cs-metrics-strip-value blue">AWS EC2</div>
-          <div class="cs-metrics-strip-label">deployment target</div>
-        </div>
-      </div>
-
-      <div class="cs-body cs-body--wide">
-        <div style="display:flex; flex-direction:column; gap:0.75rem;">
-          <div class="cs-visual" id="ml-img" role="button" tabindex="0" aria-label="Expand ML Platform dashboard screenshot">
-            <img src="assets/ml-dashboard.png" alt="DeployML dashboard showing deployment overview with active instances" loading="lazy" />
-            <div class="cs-visual-caption">DeployML — self-service deployment dashboard</div>
-          </div>
-          <div class="cs-visual" id="ml-deploy-img" role="button" tabindex="0" aria-label="Expand ML Platform deployment view screenshot">
-            <img src="assets/ml-deployment.png" alt="DeployML deployment in progress — live status streaming over Socket.IO" loading="lazy" />
-            <div class="cs-visual-caption">Deployment in progress — real-time status via Socket.IO</div>
-          </div>
-          <div class="cs-tradeoffs" style="margin-bottom:0;">
-            <div class="cs-tradeoffs-label">Architecture note</div>
-            <p>A Terraform-based production architecture (CloudFront → ALB → ECS Fargate → RDS) is <strong>designed and documented</strong> on the <code>feature/aws-production</code> branch. The current deployed orchestration runs against EC2 using boto3 + Paramiko. The IaC design represents the next evolution, not the current deployment.</p>
-          </div>
-        </div>
-
-        <div class="cs-content">
-          <p class="cs-description">
-            A self-service platform that accepts a GitHub URL and deploys a live ML application on AWS EC2
-            through a <strong>13-step orchestration pipeline</strong>. The backend coordinates EC2 provisioning,
-            Docker deployment, NGINX configuration, and real-time status streaming over Socket.IO —
-            all triggered by a single form submission.
-          </p>
-          <p class="cs-description">
-            The front end was built with <strong>React 19 + Vite</strong>. The orchestration layer uses
-            <strong>boto3 for AWS provisioning</strong> and <strong>Paramiko for SSH-based remote execution</strong>.
-            A PostgreSQL database tracks deployments and instance state.
-          </p>
-
-          <div class="arch-flow">
-            <div class="arch-flow-title">Orchestration pipeline</div>
-            <div class="arch-steps">
-              <div class="arch-step">
-                <div class="arch-step-connector"><div class="arch-step-dot blue"></div><div class="arch-step-line"></div></div>
-                <div class="arch-step-body"><div class="arch-step-name">GitHub URL submitted</div><div class="arch-step-detail">Flask API receives request, writes to PostgreSQL</div></div>
-              </div>
-              <div class="arch-step">
-                <div class="arch-step-connector"><div class="arch-step-dot"></div><div class="arch-step-line"></div></div>
-                <div class="arch-step-body"><div class="arch-step-name">EC2 provisioned via boto3</div><div class="arch-step-detail">Security groups, key pair, instance launched</div></div>
-              </div>
-              <div class="arch-step">
-                <div class="arch-step-connector"><div class="arch-step-dot"></div><div class="arch-step-line"></div></div>
-                <div class="arch-step-body"><div class="arch-step-name">SSH connection via Paramiko</div><div class="arch-step-detail">Docker + Git installed, repo cloned</div></div>
-              </div>
-              <div class="arch-step">
-                <div class="arch-step-connector"><div class="arch-step-dot"></div><div class="arch-step-line"></div></div>
-                <div class="arch-step-body"><div class="arch-step-name">Container built and started</div><div class="arch-step-detail">docker build → docker run on EC2</div></div>
-              </div>
-              <div class="arch-step">
-                <div class="arch-step-connector"><div class="arch-step-dot green"></div><div class="arch-step-line" style="background:transparent;"></div></div>
-                <div class="arch-step-body"><div class="arch-step-name">Live URL returned</div><div class="arch-step-detail">Status streamed to dashboard via Socket.IO</div></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cs-tags">
-            <span class="tag">AWS EC2</span>
-            <span class="tag">Flask</span>
-            <span class="tag">React 19</span>
-            <span class="tag">Socket.IO</span>
-            <span class="tag">PostgreSQL</span>
-            <span class="tag">Docker</span>
-            <span class="tag tag--blue">boto3</span>
-            <span class="tag tag--blue">Paramiko</span>
-            <span class="tag">Gunicorn</span>
-            <span class="tag">NGINX</span>
-          </div>
-
-          <div class="cs-links">
-            <a href="https://github.com/Vasanth1602/ML-Deployment-Platform" class="btn btn--outline" id="ml-github" target="_blank" rel="noopener noreferrer">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-              View Repository
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ───────── PROJECT 2: AWS DevOps Platform ─────────────── -->
-    <div class="case-study reveal" id="project-aws">
-      <div class="cs-header">
-        <span class="cs-number">02</span>
-        <h3 class="cs-title">AWS DevOps Platform</h3>
-      </div>
-      <p class="cs-problem">What does a complete cloud-to-production engineering path look like — infrastructure, delivery, observability, and reliability testing in one project?</p>
-
-      <!-- k6 load test results — full width for visual weight -->
-      <div class="cs-metrics-strip">
-        <div class="cs-metrics-strip-item">
-          <div class="cs-metrics-strip-value green">0.00%</div>
-          <div class="cs-metrics-strip-label">k6 error rate</div>
-        </div>
-        <div class="cs-metrics-strip-item">
-          <div class="cs-metrics-strip-value">1,470</div>
-          <div class="cs-metrics-strip-label">requests sent</div>
-        </div>
-        <div class="cs-metrics-strip-item">
-          <div class="cs-metrics-strip-value">20</div>
-          <div class="cs-metrics-strip-label">virtual users</div>
-        </div>
-        <div class="cs-metrics-strip-item">
-          <div class="cs-metrics-strip-value blue">100%</div>
-          <div class="cs-metrics-strip-label">checks passed</div>
-        </div>
-      </div>
-
-      <div class="cs-body">
-        <div class="cs-content">
-          <p class="cs-description">
-            End-to-end cloud engineering: <strong>Terraform provisions the AWS stack</strong> from scratch.
-            <strong>GitHub Actions</strong> handles build, test, push to GHCR, and SSH-based EC2 deployment.
-            <strong>CloudWatch</strong> provides dashboards, alarms, log streams, and custom metrics.
-            <strong>k6</strong> validates reliability under load before the project was considered complete.
-          </p>
-
-          <div class="arch-flow">
-            <div class="arch-flow-title">CI/CD pipeline — git push to live</div>
-            <div class="arch-steps">
-              <div class="arch-step">
-                <div class="arch-step-connector"><div class="arch-step-dot blue"></div><div class="arch-step-line"></div></div>
-                <div class="arch-step-body"><div class="arch-step-name">git push → GitHub Actions triggers</div></div>
-              </div>
-              <div class="arch-step">
-                <div class="arch-step-connector"><div class="arch-step-dot"></div><div class="arch-step-line"></div></div>
-                <div class="arch-step-body"><div class="arch-step-name">Python tests pass</div></div>
-              </div>
-              <div class="arch-step">
-                <div class="arch-step-connector"><div class="arch-step-dot"></div><div class="arch-step-line"></div></div>
-                <div class="arch-step-body"><div class="arch-step-name">Docker build → push to GHCR</div></div>
-              </div>
-              <div class="arch-step">
-                <div class="arch-step-connector"><div class="arch-step-dot"></div><div class="arch-step-line"></div></div>
-                <div class="arch-step-body"><div class="arch-step-name">SSH → EC2 pulls image, restarts container</div></div>
-              </div>
-              <div class="arch-step">
-                <div class="arch-step-connector"><div class="arch-step-dot"></div><div class="arch-step-line"></div></div>
-                <div class="arch-step-body"><div class="arch-step-name">Health check gate — deployment verified</div></div>
-              </div>
-              <div class="arch-step">
-                <div class="arch-step-connector"><div class="arch-step-dot green"></div><div class="arch-step-line" style="background:transparent;"></div></div>
-                <div class="arch-step-body"><div class="arch-step-name">NGINX → Gunicorn → Flask serving requests</div></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cs-tags">
-            <span class="tag">Terraform</span>
-            <span class="tag tag--blue">AWS EC2</span>
-            <span class="tag tag--blue">VPC</span>
-            <span class="tag tag--blue">IAM</span>
-            <span class="tag tag--blue">S3</span>
-            <span class="tag tag--blue">CloudWatch</span>
-            <span class="tag">GitHub Actions</span>
-            <span class="tag">Docker</span>
-            <span class="tag">NGINX</span>
-            <span class="tag">GHCR</span>
-            <span class="tag">Flask</span>
-            <span class="tag tag--green">k6</span>
-          </div>
-
-          <div class="cs-links">
-            <a href="https://github.com/Vasanth1602/aws-devops-platform" class="btn btn--outline" id="aws-github" target="_blank" rel="noopener noreferrer">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-              View Repository
-            </a>
-          </div>
-        </div>
-
-        <div>
-          <div class="cs-visual" id="aws-img" role="button" tabindex="0" aria-label="Expand AWS architecture diagram">
-            <img src="assets/aws-architecture.png" alt="AWS DevOps Platform infrastructure architecture showing VPC, EC2, CloudWatch, and CI/CD flow" loading="lazy" />
-            <div class="cs-visual-caption">AWS infrastructure — Terraform-provisioned stack</div>
-          </div>
-          <div class="cs-tradeoffs" style="margin-bottom:0;">
-            <div class="cs-tradeoffs-label">Engineering trade-off</div>
-            <p><strong>Current:</strong> SSH-based deployment from GitHub Actions. Simple, transparent, works for this scope.<br><strong>Known limitation:</strong> SSH keys in CI, no HTTPS, single-instance.<br><strong>Production path:</strong> AWS SSM Session Manager, ALB + ACM certificate, Auto Scaling Group.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ───────── PROJECT 3: VoteSecure ──────────────────────── -->
-    <div class="case-study reveal" id="project-votesecure">
-      <div class="cs-header">
-        <span class="cs-number">03</span>
-        <h3 class="cs-title">VoteSecure — DevOps Journey</h3>
-      </div>
-      <p class="cs-problem">How do you learn DevOps from first principles — not from tutorials, but by deliberately breaking a real system and documenting what happens?</p>
-
-      <div class="cs-body">
-        <div class="cs-content">
-          <p class="cs-description">
-            A full-stack voting platform built as a <strong>progressive DevOps project</strong> — containerized, proxied, and CI-validated across three phases. The platform uses
-            FastAPI + React 18, PostgreSQL with AES-256 ballot encryption, Redis for rate limiting and JWT blacklisting, and Socket.IO for real-time vote streaming.
-          </p>
-          <p class="cs-description">
-            The engineering differentiator: <strong>six production failures were simulated on purpose</strong>. Each incident was reproduced, investigated in depth, documented with root cause and remediation, and used to improve the system. These are not hypothetical exercises — they are full incident reports based on real log output, real error messages, and real recovery steps.
-          </p>
-
-          <div class="phase-roadmap" role="list" aria-label="Project phases">
-            <div class="phase-item done" role="listitem">
-              <div class="phase-number">PHASE 1</div>
-              <div class="phase-title">Containerization</div>
-              <div class="phase-badge done">Completed</div>
-            </div>
-            <div class="phase-item done" role="listitem">
-              <div class="phase-number">PHASE 2</div>
-              <div class="phase-title">Reverse Proxy</div>
-              <div class="phase-badge done">Completed</div>
-            </div>
-            <div class="phase-item done" role="listitem">
-              <div class="phase-number">PHASE 3</div>
-              <div class="phase-title">CI Pipeline</div>
-              <div class="phase-badge done">Completed</div>
-            </div>
-            <div class="phase-item upcoming" role="listitem">
-              <div class="phase-number">PHASE 4</div>
-              <div class="phase-title">AWS Deployment</div>
-              <div class="phase-badge upcoming">Upcoming</div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="cs-visual" id="vote-img" role="button" tabindex="0" aria-label="Expand VoteSecure architecture diagram">
-            <img src="assets/votesecure.png" alt="VoteSecure architecture diagram — Browser to NGINX to FastAPI to PostgreSQL and Redis" loading="lazy" style="filter:brightness(0.88) contrast(1.05);" />
-            <div class="cs-visual-caption">Architecture — Browser → NGINX → FastAPI → PostgreSQL + Redis</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Full-width incident board below the two-column grid -->
-      <div class="section-label" style="margin-top:2rem; margin-bottom:1rem;">6 documented incident reports — click to expand</div>
-
-      <div class="incident-board" id="incident-board">
-
-        <!-- INC-001 -->
-        <div class="incident-card" id="inc-001">
-          <div class="incident-card-header" role="button" tabindex="0" aria-expanded="false" aria-controls="inc-001-body">
-            <span class="inc-id">INC-001</span>
-            <span class="inc-title">PostgreSQL container stopped — DNS deregistered, hostname unresolvable</span>
-            <span class="inc-status">Resolved</span>
-            <span class="inc-chevron" aria-hidden="true">▼</span>
-          </div>
-          <div class="incident-card-body" id="inc-001-body" role="region">
-            <div class="inc-meta">
-              <span class="tag tag--amber">High</span>
-              <span class="tag">Phase 1</span>
-              <span class="tag">Intentional simulation</span>
-            </div>
-            <div class="inc-section">
-              <div class="inc-section-label">Symptom</div>
-              <div class="inc-section-content">All DB-dependent endpoints → <code>500</code>. Frontend loaded. <code>GET /api/auth/me</code> worked (JWT, no DB call). Redis rate limiting active. Container status showed all containers "Up" — monitoring would have shown green while users saw 500s.</div>
-            </div>
-            <div class="inc-section">
-              <div class="inc-section-label">Root cause</div>
-              <div class="inc-section-content">When a Docker container stops, it deregisters from the internal bridge network DNS. The hostname <code>postgres</code> became unresolvable — not "connection refused" but "no address associated with hostname." The backend never attempts TCP; DNS fails first.</div>
-            </div>
-            <div class="inc-section">
-              <div class="inc-section-label">Lesson</div>
-              <div class="inc-section-content">Docker DNS fails before TCP. Static health checks that return <code>200 OK</code> without testing the database are liveness probes — not readiness probes. A green health endpoint during a DB outage is actively misleading.</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- INC-002 -->
-        <div class="incident-card" id="inc-002">
-          <div class="incident-card-header" role="button" tabindex="0" aria-expanded="false" aria-controls="inc-002-body">
-            <span class="inc-id">INC-002</span>
-            <span class="inc-title">DB_HOST=localhost — total outage with zero infrastructure failure</span>
-            <span class="inc-status">Resolved</span>
-            <span class="inc-chevron" aria-hidden="true">▼</span>
-          </div>
-          <div class="incident-card-body" id="inc-002-body" role="region">
-            <div class="inc-meta">
-              <span class="tag" style="color:var(--red);border-color:rgba(239,68,68,0.25);background:var(--red-dim);">Critical</span>
-              <span class="tag">Phase 1</span>
-              <span class="tag">Misconfiguration</span>
-            </div>
-            <div class="inc-section">
-              <div class="inc-section-label">Symptom</div>
-              <div class="inc-section-content">Backend exited at startup — never accepted a single request. NGINX returned <code>502 Bad Gateway</code> on every API call. PostgreSQL, Redis, NGINX, and frontend were all fully healthy. Infrastructure was green; application was dead.</div>
-            </div>
-            <div class="inc-section">
-              <div class="inc-section-label">Root cause</div>
-              <div class="inc-section-content"><code>DB_HOST=localhost</code> set instead of <code>DB_HOST=postgres</code>. Inside a Docker container, <code>localhost</code> resolves to the container's own loopback (<code>127.0.0.1</code>). PostgreSQL was running in a separate network namespace, reachable only by its service name. DNS succeeded; TCP was refused. Backend startup event failed; Uvicorn exited.</div>
-            </div>
-            <div class="inc-section">
-              <div class="inc-section-label">Lesson</div>
-              <div class="inc-section-content">All infrastructure healthy + application down = configuration error. <code>502</code> means dead upstream (check container state). <code>500</code> means broken upstream (check application logs). The error code is the first debugging signal. <code>--force-recreate</code> is required for env var changes — <code>restart</code> does not apply them.</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- INC-003 -->
-        <div class="incident-card" id="inc-003">
-          <div class="incident-card-header" role="button" tabindex="0" aria-expanded="false" aria-controls="inc-003-body">
-            <span class="inc-id">INC-003</span>
-            <span class="inc-title">NGINX stripped WebSocket Upgrade headers — real-time feature silently broken</span>
-            <span class="inc-status">Resolved</span>
-            <span class="inc-chevron" aria-hidden="true">▼</span>
-          </div>
-          <div class="incident-card-body" id="inc-003-body" role="region">
-            <div class="inc-meta">
-              <span class="tag tag--amber">High</span>
-              <span class="tag">Phase 2</span>
-              <span class="tag">Silent degradation</span>
-            </div>
-            <div class="inc-section">
-              <div class="inc-section-label">Symptom</div>
-              <div class="inc-section-content">Live Results page showed no real-time vote updates. All other features worked. No 500 errors. Dashboards green. Users would only discover the failure by noticing vote counts not updating — no alert would catch this.</div>
-            </div>
-            <div class="inc-section">
-              <div class="inc-section-label">Root cause</div>
-              <div class="inc-section-content">NGINX strips hop-by-hop headers (including <code>Upgrade</code> and <code>Connection</code>) before forwarding requests upstream. The browser sent a WebSocket upgrade request; NGINX removed the headers; the backend received a plain HTTP request and refused the upgrade. Fix: <code>proxy_set_header Upgrade $http_upgrade;</code> and <code>proxy_http_version 1.1;</code> in NGINX config.</div>
-            </div>
-            <div class="inc-section">
-              <div class="inc-section-label">Lesson</div>
-              <div class="inc-section-content">Silent partial failures are harder than total outages. Dashboards stayed green. The feature worked in local dev (no NGINX). Production added a proxy layer that broke one specific protocol. Test the full stack — not just the application in isolation.</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- INC-004 -->
-        <div class="incident-card" id="inc-004">
-          <div class="incident-card-header" role="button" tabindex="0" aria-expanded="false" aria-controls="inc-004-body">
-            <span class="inc-id">INC-004</span>
-            <span class="inc-title">CI build failed — Dockerfile error local cache had hidden for weeks</span>
-            <span class="inc-status">Resolved</span>
-            <span class="inc-chevron" aria-hidden="true">▼</span>
-          </div>
-          <div class="incident-card-body" id="inc-004-body" role="region">
-            <div class="inc-meta">
-              <span class="tag tag--amber">High</span>
-              <span class="tag">Phase 3</span>
-              <span class="tag">Intentional simulation</span>
-            </div>
-            <div class="inc-section">
-              <div class="inc-section-label">Symptom</div>
-              <div class="inc-section-content">CI pipeline failed at the Docker build step. The same <code>docker build</code> succeeded locally. The PR was blocked from merging.</div>
-            </div>
-            <div class="inc-section">
-              <div class="inc-section-label">Root cause</div>
-              <div class="inc-section-content">Local Docker build used a cached layer containing a previously valid dependency. CI builds from scratch with no cache — it hit an actual package resolution error that local cache had masked. The Dockerfile had a latent defect that only showed up in a clean build environment.</div>
-            </div>
-            <div class="inc-section">
-              <div class="inc-section-label">Lesson</div>
-              <div class="inc-section-content">CI is a clean-room environment — it proves your build is reproducible, not just that it worked on your machine. "Works locally" is not evidence of a correct Dockerfile. Periodically build with <code>--no-cache</code> in local dev to find hidden dependency issues before CI does.</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- INC-005 -->
-        <div class="incident-card" id="inc-005">
-          <div class="incident-card-header" role="button" tabindex="0" aria-expanded="false" aria-controls="inc-005-body">
-            <span class="inc-id">INC-005</span>
-            <span class="inc-title">Smoke test failed — wrong GitHub Secret name, silent misconfiguration</span>
-            <span class="inc-status">Resolved</span>
-            <span class="inc-chevron" aria-hidden="true">▼</span>
-          </div>
-          <div class="incident-card-body" id="inc-005-body" role="region">
-            <div class="inc-meta">
-              <span class="tag tag--amber">High</span>
-              <span class="tag">Phase 3</span>
-              <span class="tag">Misconfiguration</span>
-            </div>
-            <div class="inc-section">
-              <div class="inc-section-label">Symptom</div>
-              <div class="inc-section-content">CI smoke test step failed with an authentication error. The application code and Docker build were both correct. The pipeline passed tests and build, then failed at smoke test.</div>
-            </div>
-            <div class="inc-section">
-              <div class="inc-section-label">Root cause</div>
-              <div class="inc-section-content">The workflow referenced a GitHub Secret by an incorrect name. GitHub does not error on missing secrets — it silently injects an empty string. The application received an empty database password, failed to authenticate, and the smoke test correctly detected the failure.</div>
-            </div>
-            <div class="inc-section">
-              <div class="inc-section-label">Lesson</div>
-              <div class="inc-section-content">Secret name mismatches are invisible until runtime. GitHub won't warn you. Add secret validation at pipeline startup — fail fast with a clear message if a required secret is empty, rather than letting downstream steps fail with cryptic errors.</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- INC-006 -->
-        <div class="incident-card" id="inc-006">
-          <div class="incident-card-header" role="button" tabindex="0" aria-expanded="false" aria-controls="inc-006-body">
-            <span class="inc-id">INC-006</span>
-            <span class="inc-title">Pipeline never triggered — wrong branch in workflow trigger</span>
-            <span class="inc-status">Resolved</span>
-            <span class="inc-chevron" aria-hidden="true">▼</span>
-          </div>
-          <div class="incident-card-body" id="inc-006-body" role="region">
-            <div class="inc-meta">
-              <span class="tag" style="color:var(--red);border-color:rgba(239,68,68,0.25);background:var(--red-dim);">Critical</span>
-              <span class="tag">Phase 3</span>
-              <span class="tag">Silent failure</span>
-            </div>
-            <div class="inc-section">
-              <div class="inc-section-label">Symptom</div>
-              <div class="inc-section-content">Code pushed. PR opened. Zero CI workflow runs appeared. No red status, no yellow status — nothing. The PR showed as ready to merge with no quality gate. Any broken code could have been merged without detection.</div>
-            </div>
-            <div class="inc-section">
-              <div class="inc-section-label">Root cause</div>
-              <div class="inc-section-content">Workflow trigger changed from <code>branches: [main]</code> to <code>branches: [production]</code>. <code>production</code> does not exist as a branch. The YAML is syntactically valid — GitHub parses it without error. The trigger simply never fires because no PR ever targets a <code>production</code> branch.</div>
-            </div>
-            <div class="inc-section">
-              <div class="inc-section-label">Lesson</div>
-              <div class="inc-section-content">A pipeline that fails tells you something is wrong. A pipeline that doesn't run tells you nothing — and you won't notice it isn't running. Validate CI trigger configuration on every workflow change. Require status checks in branch protection rules — a missing check should be as alarming as a failing one.</div>
-            </div>
-          </div>
-        </div>
-
-      </div><!-- /.incident-board -->
-
-      <div style="margin-top:1.5rem;" class="cs-tags">
-        <span class="tag">Docker Compose V2</span>
-        <span class="tag">NGINX</span>
+      <div class="hero-stack">
+        <span class="tag tag--blue">AWS</span>
+        <span class="tag">Terraform</span>
+        <span class="tag">Docker</span>
         <span class="tag">GitHub Actions</span>
-        <span class="tag">FastAPI</span>
-        <span class="tag">React 18</span>
-        <span class="tag tag--amber">Redis</span>
-        <span class="tag">PostgreSQL</span>
-        <span class="tag" style="color:var(--red);border-color:rgba(239,68,68,0.2);">AES-256</span>
-        <span class="tag">JWT</span>
-        <span class="tag">Socket.IO</span>
+        <span class="tag">Jenkins</span>
+        <span class="tag tag--amber">DevSecOps</span>
       </div>
 
-      <div class="cs-links">
-        <a href="https://github.com/Vasanth1602/votesecure-devops-journey" class="btn btn--outline" id="votesecure-github" target="_blank" rel="noopener noreferrer">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-          View Repository
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn--primary" id="hero-view-work">View Projects</a>
+        <a href="https://github.com/Vasanth1602" class="btn btn--outline" id="hero-github" target="_blank"
+          rel="noopener noreferrer">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+          </svg>
+          GitHub
         </a>
-      </div>
-    </div>
-
-  </div><!-- /.container -->
-</section>
-
-
-
-<!-- ═══════════════════════════ HOW I WORK ════════════════════ -->
-<section id="how-i-work">
-  <div class="container">
-    <div class="section-label">// Engineering Philosophy</div>
-    <h2 class="section-title">How I Work</h2>
-    <p class="section-desc">Principles I've developed from actually building and breaking these systems — not from theory.</p>
-
-    <div class="principles-grid">
-
-      <div class="principle-item reveal">
-        <div class="principle-num">01</div>
-        <div class="principle-title">Infrastructure as Code first</div>
-        <p class="principle-desc">Infrastructure that can't be reproduced isn't infrastructure — it's a configuration that happened to work once. Everything I provision starts with code: Terraform modules, docker-compose files, Dockerfiles with explicit layers.</p>
-        <div class="principle-project">→ ML Deployment Platform, AWS DevOps Platform</div>
+        <a href="assets/Vasanth_A_DevOps_Resume.pdf" class="btn btn--outline" id="hero-resume" download>Resume ↓</a>
+        <a href="https://www.linkedin.com/in/vasanth1602" class="btn btn--ghost" id="hero-linkedin" target="_blank"
+          rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
       </div>
 
-      <div class="principle-item reveal reveal-d1">
-        <div class="principle-num">02</div>
-        <div class="principle-title">Automate the path to production</div>
-        <p class="principle-desc">Manual deployment steps accumulate hidden dependencies and silent assumptions. Each manual step is a future incident waiting to happen. Automating the full path — including health check gates — makes deployment safe to repeat.</p>
-        <div class="principle-project">→ GitHub Actions pipeline, 13-step orchestration</div>
-      </div>
-
-      <div class="principle-item reveal reveal-d2">
-        <div class="principle-num">03</div>
-        <div class="principle-title">Test failure, not only success</div>
-        <p class="principle-desc">A green pipeline proves the happy path works. It says nothing about what happens when Postgres stops, a config value is wrong, or a dependency fails on a cold build. VoteSecure exists specifically to answer those questions.</p>
-        <div class="principle-project">→ INC-001 through INC-006</div>
-      </div>
-
-      <div class="principle-item reveal reveal-d1">
-        <div class="principle-num">04</div>
-        <div class="principle-title">Document the incident</div>
-        <p class="principle-desc">Fixing the problem is necessary. Understanding why it happened is what makes the system better. A root-cause analysis written after every incident — even a deliberate simulation — trains the instinct to think at the right layer.</p>
-        <div class="principle-project">→ VoteSecure incident reports</div>
-      </div>
-
-      <div class="principle-item reveal reveal-d2">
-        <div class="principle-num">05</div>
-        <div class="principle-title">Observe before you trust</div>
-        <p class="principle-desc">A system is only as reliable as your ability to see what it's doing. CloudWatch dashboards, alarms, custom metrics, log streams, and k6 load tests aren't afterthoughts — they're how you verify the infrastructure you built actually works under real conditions.</p>
-        <div class="principle-project">→ AWS DevOps Platform observability stack</div>
-      </div>
-
-      <div class="principle-item reveal reveal-d1">
-        <div class="principle-num">06</div>
-        <div class="principle-title">Acknowledge trade-offs explicitly</div>
-        <p class="principle-desc">SSH-based CI/CD is simpler than SSM. A single EC2 instance is cheaper than Auto Scaling. Single-request DB connections recover automatically but don't pool efficiently. Knowing the trade-off and naming it is more useful than pretending it doesn't exist.</p>
-        <div class="principle-project">→ AWS DevOps Platform trade-offs</div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════ STACK ═════════════════════════ -->
-<section id="stack">
-  <div class="container">
-    <div class="section-label">// Technical Stack</div>
-    <h2 class="section-title">Engineering Stack</h2>
-    <p class="section-desc">Tools I've used in real projects — not listed because they look good on a resume.</p>
-
-    <div class="stack-table reveal">
-      <div class="stack-row">
-        <div class="stack-category">Cloud</div>
-        <div class="stack-items">
-          <span class="tag tag--blue">AWS</span>
-          <span class="stack-divider">—</span>
-          <span class="tag">EC2</span>
-          <span class="tag">ECS Fargate</span>
-          <span class="tag">VPC</span>
-          <span class="tag">ALB</span>
-          <span class="tag">RDS</span>
-          <span class="tag">S3</span>
-          <span class="tag">IAM</span>
-          <span class="tag">CloudFront</span>
-          <span class="tag">CloudWatch</span>
-          <span class="tag">Secrets Manager</span>
+      <div class="hero-context">
+        <div class="hero-context-item">
+          <div class="hero-context-num">3</div>
+          <div class="hero-context-label">engineering<br>case studies</div>
         </div>
-      </div>
-      <div class="stack-row">
-        <div class="stack-category">Infrastructure</div>
-        <div class="stack-items">
-          <span class="tag">Terraform</span>
-          <span class="stack-divider">—</span>
-          <span class="tag">Modular IaC</span>
-          <span class="tag">Remote State</span>
-          <span class="tag">Workspaces</span>
-          <span class="tag">tfvars</span>
+        <div class="hero-context-item">
+          <div class="hero-context-num">6</div>
+          <div class="hero-context-label">documented<br>incident reports</div>
         </div>
-      </div>
-      <div class="stack-row">
-        <div class="stack-category">Containers</div>
-        <div class="stack-items">
-          <span class="tag">Docker</span>
-          <span class="tag">Docker Compose V2</span>
-          <span class="tag">Multi-stage Builds</span>
-          <span class="tag">GHCR</span>
-          <span class="tag">ECR</span>
-          <span class="tag tag--amber">Kubernetes</span>
-          <span class="tag tag--amber">fundamentals</span>
-        </div>
-      </div>
-      <div class="stack-row">
-        <div class="stack-category">Delivery</div>
-        <div class="stack-items">
-          <span class="tag">GitHub Actions</span>
-          <span class="tag">Jenkins</span>
-          <span class="tag">Groovy Pipelines</span>
-          <span class="tag">Health Check Gates</span>
-          <span class="tag">Smoke Testing</span>
-        </div>
-      </div>
-      <div class="stack-row">
-        <div class="stack-category">Security</div>
-        <div class="stack-items">
-          <span class="tag tag--amber">SAST</span>
-          <span class="tag tag--amber">SCA</span>
-          <span class="tag tag--amber">CVE Analysis</span>
-          <span class="tag tag--amber">OWASP Top 10</span>
-          <span class="tag">SonarQube</span>
-          <span class="tag">Snyk</span>
-          <span class="tag">OWASP Dep-Check</span>
-          <span class="tag">Trivy</span>
-        </div>
-      </div>
-      <div class="stack-row">
-        <div class="stack-category">Observability</div>
-        <div class="stack-items">
-          <span class="tag tag--green">CloudWatch</span>
-          <span class="tag tag--green">Prometheus</span>
-          <span class="tag tag--green">Grafana</span>
-          <span class="tag tag--green">k6</span>
-          <span class="tag">Custom Metrics</span>
-          <span class="tag">Log Streams</span>
-        </div>
-      </div>
-      <div class="stack-row">
-        <div class="stack-category">Automation</div>
-        <div class="stack-items">
-          <span class="tag">Python</span>
-          <span class="tag">Bash</span>
-          <span class="tag">boto3</span>
-          <span class="tag">Paramiko</span>
-          <span class="tag">NGINX</span>
-          <span class="tag">Gunicorn</span>
-          <span class="tag">Linux (Ubuntu)</span>
+        <div class="hero-context-item">
+          <div class="hero-context-num">Active</div>
+          <div class="hero-context-label">DevSecOps internship<br>SecIQ Technologies</div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ═══════════════════════════ MORE WORK ═════════════════════ -->
-<section id="more-work">
-  <div class="container">
-    <div class="section-label">// Additional Work</div>
-    <h2 class="section-title">More Experiments</h2>
-    <p class="section-desc">Smaller projects and exercises that contributed to the DevOps / Cloud story.</p>
-
-    <div class="more-work-grid">
-
-      <div class="more-work-item reveal">
-        <div class="mw-category">CI/CD · Jenkins</div>
-        <div class="mw-title">Jenkins Workflow Demo</div>
-        <p class="mw-desc">Declarative Jenkins pipeline: Python virtualenv setup, unit tests, conditional branch-aware deployment, and automated PR merge via GitHub API using Groovy scripting.</p>
-        <div class="mw-tech">
-          <span class="tag">Jenkins</span>
-          <span class="tag">Groovy</span>
-          <span class="tag">GitHub API</span>
-          <span class="tag">Python</span>
-        </div>
-        <a href="https://github.com/Vasanth1602/jenkins_workflow" class="mw-link" target="_blank" rel="noopener noreferrer" id="mw-jenkins">View on GitHub →</a>
+  <!-- ═══════════════════════════ PROJECTS ══════════════════════ -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">// Projects</div>
+        <h2 class="section-title">What I've Built</h2>
+        <p class="section-desc">Three systems, each built to understand something specific about infrastructure,
+          delivery, and failure.</p>
       </div>
 
-      <div class="more-work-item reveal reveal-d1">
-        <div class="mw-category">Cloud · AWS · Python</div>
-        <div class="mw-title">Cloud Resource Audit Platform</div>
-        <p class="mw-desc">AWS governance tool using boto3 to scan EC2, EBS, S3, RDS, EIP, Snapshots, ALB, and NAT Gateways across regions. 20+ deterministic rules, ranked cost-savings recommendations, CSV/JSON/HTML export.</p>
-        <div class="mw-tech">
-          <span class="tag">boto3</span>
-          <span class="tag">Cost Explorer</span>
-          <span class="tag">React</span>
-          <span class="tag">Flask</span>
+      <!-- ───────── PROJECT 1: ML Deployment Platform ─────────── -->
+      <div class="case-study reveal" id="project-ml">
+        <div class="cs-header">
+          <span class="cs-number">01</span>
+          <h3 class="cs-title">ML Deployment Platform</h3>
         </div>
-        <a href="https://github.com/Vasanth1602/Cloud-Resource-Audit-Cost-Optimization-Platform" class="mw-link" target="_blank" rel="noopener noreferrer" id="mw-cloud-audit">View on GitHub →</a>
-      </div>
+        <p class="cs-problem">How do you turn a 30-minute manual AWS deployment workflow into a repeatable, automated
+          platform?</p>
 
-      <div class="more-work-item reveal reveal-d2">
-        <div class="mw-category">Linux · NGINX · Deployment</div>
-        <div class="mw-title">Zero-Downtime Deployment via Symlinks</div>
-        <p class="mw-desc">Blue-green style deployment using filesystem symlinks and NGINX configuration reloads — no container orchestrator required. Demonstrates the mechanism behind zero-downtime at the OS level.</p>
-        <div class="mw-tech">
-          <span class="tag">NGINX</span>
-          <span class="tag">Linux</span>
-          <span class="tag">Bash</span>
-        </div>
-        <a href="https://github.com/Vasanth1602/DevopsTasks" class="mw-link" target="_blank" rel="noopener noreferrer" id="mw-zero-downtime">View on GitHub →</a>
-      </div>
-
-      <div class="more-work-item reveal reveal-d1">
-        <div class="mw-category">Kubernetes · Static Deployment</div>
-        <div class="mw-title">Static App Deployment to Kubernetes</div>
-        <p class="mw-desc">Deploy a static page to a local Kubernetes cluster using Deployment and Service manifests. Demonstrates pod scheduling, replica management, and service exposure fundamentals.</p>
-        <div class="mw-tech">
-          <span class="tag">Kubernetes</span>
-          <span class="tag">kubectl</span>
-          <span class="tag">NGINX</span>
-        </div>
-        <a href="https://github.com/Vasanth1602/DevopsTasks" class="mw-link" target="_blank" rel="noopener noreferrer" id="mw-kubernetes">View on GitHub →</a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════ EXPERIENCE ════════════════════ -->
-<section id="experience">
-  <div class="container">
-    <div class="section-label">// Experience</div>
-    <h2 class="section-title">Where I've Worked</h2>
-
-    <div class="timeline">
-
-      <div class="timeline-item reveal">
-        <div class="timeline-meta">
-          <div class="timeline-date">Jul 2026 — Present</div>
-          <div class="timeline-company">
-            <strong>SecIQ Technologies LLP</strong>
-            Remote · Bengaluru
-            <div class="timeline-sub">DevSecOps Internship</div>
+        <!-- Full-width transform strip -->
+        <div class="cs-metrics-strip">
+          <div class="cs-metrics-strip-item">
+            <div class="cs-metrics-strip-value amber">~30 min</div>
+            <div class="cs-metrics-strip-label">manual AWS console</div>
+          </div>
+          <div class="cs-metrics-strip-item">
+            <div class="cs-metrics-strip-value">13 steps</div>
+            <div class="cs-metrics-strip-label">orchestration pipeline</div>
+          </div>
+          <div class="cs-metrics-strip-item">
+            <div class="cs-metrics-strip-value green">&lt;5 min</div>
+            <div class="cs-metrics-strip-label">automated end-to-end</div>
+          </div>
+          <div class="cs-metrics-strip-item">
+            <div class="cs-metrics-strip-value blue">AWS EC2</div>
+            <div class="cs-metrics-strip-label">deployment target</div>
           </div>
         </div>
-        <div class="timeline-content">
-          <div class="timeline-role">DevSecOps Intern</div>
-          <ul class="timeline-bullets">
-            <li>Performed end-to-end SAST triage using SonarQube across Python, Java, and JavaScript projects — validating True/False Positives, mapping to OWASP Top 10 categories, and writing developer-facing remediation recommendations.</li>
-            <li>Triaged SCA and dependency vulnerabilities using OWASP Dependency-Check and Snyk — analyzing CVEs by CVSS score, affected package versions, and validating findings against NVD, Debian Security Tracker, and Secure Software databases.</li>
-            <li>Configured OWASP Dependency-Check in a Jenkins pipeline to automate dependency scanning and structured report generation as part of client security assessment workflows.</li>
-            <li>Performed Trivy-based container image vulnerability triage during client security assessments — distinguishing exploitable CVEs from noise across OS packages and application dependencies.</li>
-          </ul>
-          <div class="timeline-tools">
-            <span class="tag tag--amber">SonarQube</span>
-            <span class="tag tag--amber">Snyk</span>
-            <span class="tag tag--amber">OWASP Dep-Check</span>
-            <span class="tag tag--amber">Trivy</span>
+
+        <div class="cs-body cs-body--wide">
+          <div style="display:flex; flex-direction:column; gap:0.75rem;">
+            <div class="cs-visual" id="ml-img" role="button" tabindex="0"
+              aria-label="Expand ML Platform dashboard screenshot">
+              <img src="assets/ml-dashboard.png"
+                alt="DeployML dashboard showing deployment overview with active instances" loading="lazy" />
+              <div class="cs-visual-caption">DeployML — self-service deployment dashboard</div>
+            </div>
+            <div class="cs-visual" id="ml-deploy-img" role="button" tabindex="0"
+              aria-label="Expand ML Platform deployment view screenshot">
+              <img src="assets/ml-deployment.png"
+                alt="DeployML deployment in progress — live status streaming over Socket.IO" loading="lazy" />
+              <div class="cs-visual-caption">Deployment in progress — real-time status via Socket.IO</div>
+            </div>
+            <div class="cs-tradeoffs" style="margin-bottom:0;">
+              <div class="cs-tradeoffs-label">Architecture note</div>
+              <p>A Terraform-based production architecture (CloudFront → ALB → ECS Fargate → RDS) is <strong>designed
+                  and documented</strong> on the <code>feature/aws-production</code> branch. The current deployed
+                orchestration runs against EC2 using boto3 + Paramiko. The IaC design represents the next evolution, not
+                the current deployment.</p>
+            </div>
+          </div>
+
+          <div class="cs-content">
+            <p class="cs-description">
+              A self-service platform that accepts a GitHub URL and deploys a live ML application on AWS EC2
+              through a <strong>13-step orchestration pipeline</strong>. The backend coordinates EC2 provisioning,
+              Docker deployment, NGINX configuration, and real-time status streaming over Socket.IO —
+              all triggered by a single form submission.
+            </p>
+            <p class="cs-description">
+              The front end was built with <strong>React 19 + Vite</strong>. The orchestration layer uses
+              <strong>boto3 for AWS provisioning</strong> and <strong>Paramiko for SSH-based remote execution</strong>.
+              A PostgreSQL database tracks deployments and instance state.
+            </p>
+
+            <div class="arch-flow">
+              <div class="arch-flow-title">Orchestration pipeline</div>
+              <div class="arch-steps">
+                <div class="arch-step">
+                  <div class="arch-step-connector">
+                    <div class="arch-step-dot blue"></div>
+                    <div class="arch-step-line"></div>
+                  </div>
+                  <div class="arch-step-body">
+                    <div class="arch-step-name">GitHub URL submitted</div>
+                    <div class="arch-step-detail">Flask API receives request, writes to PostgreSQL</div>
+                  </div>
+                </div>
+                <div class="arch-step">
+                  <div class="arch-step-connector">
+                    <div class="arch-step-dot"></div>
+                    <div class="arch-step-line"></div>
+                  </div>
+                  <div class="arch-step-body">
+                    <div class="arch-step-name">EC2 provisioned via boto3</div>
+                    <div class="arch-step-detail">Security groups, key pair, instance launched</div>
+                  </div>
+                </div>
+                <div class="arch-step">
+                  <div class="arch-step-connector">
+                    <div class="arch-step-dot"></div>
+                    <div class="arch-step-line"></div>
+                  </div>
+                  <div class="arch-step-body">
+                    <div class="arch-step-name">SSH connection via Paramiko</div>
+                    <div class="arch-step-detail">Docker + Git installed, repo cloned</div>
+                  </div>
+                </div>
+                <div class="arch-step">
+                  <div class="arch-step-connector">
+                    <div class="arch-step-dot"></div>
+                    <div class="arch-step-line"></div>
+                  </div>
+                  <div class="arch-step-body">
+                    <div class="arch-step-name">Container built and started</div>
+                    <div class="arch-step-detail">docker build → docker run on EC2</div>
+                  </div>
+                </div>
+                <div class="arch-step">
+                  <div class="arch-step-connector">
+                    <div class="arch-step-dot green"></div>
+                    <div class="arch-step-line" style="background:transparent;"></div>
+                  </div>
+                  <div class="arch-step-body">
+                    <div class="arch-step-name">Live URL returned</div>
+                    <div class="arch-step-detail">Status streamed to dashboard via Socket.IO</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cs-tags">
+              <span class="tag">AWS EC2</span>
+              <span class="tag">Flask</span>
+              <span class="tag">React 19</span>
+              <span class="tag">Socket.IO</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Docker</span>
+              <span class="tag tag--blue">boto3</span>
+              <span class="tag tag--blue">Paramiko</span>
+              <span class="tag">Gunicorn</span>
+              <span class="tag">NGINX</span>
+            </div>
+
+            <div class="cs-links">
+              <a href="https://github.com/Vasanth1602/ML-Deployment-Platform" class="btn btn--outline" id="ml-github"
+                target="_blank" rel="noopener noreferrer">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                </svg>
+                View Repository
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ───────── PROJECT 2: AWS DevOps Platform ─────────────── -->
+      <div class="case-study reveal" id="project-aws">
+        <div class="cs-header">
+          <span class="cs-number">02</span>
+          <h3 class="cs-title">AWS DevOps Platform</h3>
+        </div>
+        <p class="cs-problem">What does a complete cloud-to-production engineering path look like — infrastructure,
+          delivery, observability, and reliability testing in one project?</p>
+
+        <!-- k6 load test results — full width for visual weight -->
+        <div class="cs-metrics-strip">
+          <div class="cs-metrics-strip-item">
+            <div class="cs-metrics-strip-value green">0.00%</div>
+            <div class="cs-metrics-strip-label">k6 error rate</div>
+          </div>
+          <div class="cs-metrics-strip-item">
+            <div class="cs-metrics-strip-value">1,470</div>
+            <div class="cs-metrics-strip-label">requests sent</div>
+          </div>
+          <div class="cs-metrics-strip-item">
+            <div class="cs-metrics-strip-value">20</div>
+            <div class="cs-metrics-strip-label">virtual users</div>
+          </div>
+          <div class="cs-metrics-strip-item">
+            <div class="cs-metrics-strip-value blue">100%</div>
+            <div class="cs-metrics-strip-label">checks passed</div>
+          </div>
+        </div>
+
+        <div class="cs-body">
+          <div class="cs-content">
+            <p class="cs-description">
+              End-to-end cloud engineering: <strong>Terraform provisions the AWS stack</strong> from scratch.
+              <strong>GitHub Actions</strong> handles build, test, push to GHCR, and SSH-based EC2 deployment.
+              <strong>CloudWatch</strong> provides dashboards, alarms, log streams, and custom metrics.
+              <strong>k6</strong> validates reliability under load before the project was considered complete.
+            </p>
+
+            <div class="arch-flow">
+              <div class="arch-flow-title">CI/CD pipeline — git push to live</div>
+              <div class="arch-steps">
+                <div class="arch-step">
+                  <div class="arch-step-connector">
+                    <div class="arch-step-dot blue"></div>
+                    <div class="arch-step-line"></div>
+                  </div>
+                  <div class="arch-step-body">
+                    <div class="arch-step-name">git push → GitHub Actions triggers</div>
+                  </div>
+                </div>
+                <div class="arch-step">
+                  <div class="arch-step-connector">
+                    <div class="arch-step-dot"></div>
+                    <div class="arch-step-line"></div>
+                  </div>
+                  <div class="arch-step-body">
+                    <div class="arch-step-name">Python tests pass</div>
+                  </div>
+                </div>
+                <div class="arch-step">
+                  <div class="arch-step-connector">
+                    <div class="arch-step-dot"></div>
+                    <div class="arch-step-line"></div>
+                  </div>
+                  <div class="arch-step-body">
+                    <div class="arch-step-name">Docker build → push to GHCR</div>
+                  </div>
+                </div>
+                <div class="arch-step">
+                  <div class="arch-step-connector">
+                    <div class="arch-step-dot"></div>
+                    <div class="arch-step-line"></div>
+                  </div>
+                  <div class="arch-step-body">
+                    <div class="arch-step-name">SSH → EC2 pulls image, restarts container</div>
+                  </div>
+                </div>
+                <div class="arch-step">
+                  <div class="arch-step-connector">
+                    <div class="arch-step-dot"></div>
+                    <div class="arch-step-line"></div>
+                  </div>
+                  <div class="arch-step-body">
+                    <div class="arch-step-name">Health check gate — deployment verified</div>
+                  </div>
+                </div>
+                <div class="arch-step">
+                  <div class="arch-step-connector">
+                    <div class="arch-step-dot green"></div>
+                    <div class="arch-step-line" style="background:transparent;"></div>
+                  </div>
+                  <div class="arch-step-body">
+                    <div class="arch-step-name">NGINX → Gunicorn → Flask serving requests</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cs-tags">
+              <span class="tag">Terraform</span>
+              <span class="tag tag--blue">AWS EC2</span>
+              <span class="tag tag--blue">VPC</span>
+              <span class="tag tag--blue">IAM</span>
+              <span class="tag tag--blue">S3</span>
+              <span class="tag tag--blue">CloudWatch</span>
+              <span class="tag">GitHub Actions</span>
+              <span class="tag">Docker</span>
+              <span class="tag">NGINX</span>
+              <span class="tag">GHCR</span>
+              <span class="tag">Flask</span>
+              <span class="tag tag--green">k6</span>
+            </div>
+
+            <div class="cs-links">
+              <a href="https://github.com/Vasanth1602/aws-devops-platform" class="btn btn--outline" id="aws-github"
+                target="_blank" rel="noopener noreferrer">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                </svg>
+                View Repository
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <div class="cs-visual" id="aws-img" role="button" tabindex="0" aria-label="Expand AWS architecture diagram">
+              <img src="assets/aws-architecture.png"
+                alt="AWS DevOps Platform infrastructure architecture showing VPC, EC2, CloudWatch, and CI/CD flow"
+                loading="lazy" />
+              <div class="cs-visual-caption">AWS infrastructure — Terraform-provisioned stack</div>
+            </div>
+            <div class="cs-tradeoffs" style="margin-bottom:0;">
+              <div class="cs-tradeoffs-label">Engineering trade-off</div>
+              <p><strong>Current:</strong> SSH-based deployment from GitHub Actions. Simple, transparent, works for this
+                scope.<br><strong>Known limitation:</strong> SSH keys in CI, no HTTPS,
+                single-instance.<br><strong>Production path:</strong> AWS SSM Session Manager, ALB + ACM certificate,
+                Auto Scaling Group.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ───────── PROJECT 3: VoteSecure ──────────────────────── -->
+      <div class="case-study reveal" id="project-votesecure">
+        <div class="cs-header">
+          <span class="cs-number">03</span>
+          <h3 class="cs-title">VoteSecure — DevOps Journey</h3>
+        </div>
+        <p class="cs-problem">How do you learn DevOps from first principles — not from tutorials, but by deliberately
+          breaking a real system and documenting what happens?</p>
+
+        <div class="cs-body">
+          <div class="cs-content">
+            <p class="cs-description">
+              A full-stack voting platform built as a <strong>progressive DevOps project</strong> — containerized,
+              proxied, and CI-validated across three phases. The platform uses
+              FastAPI + React 18, PostgreSQL with AES-256 ballot encryption, Redis for rate limiting and JWT
+              blacklisting, and Socket.IO for real-time vote streaming.
+            </p>
+            <p class="cs-description">
+              The engineering differentiator: <strong>six production failures were simulated on purpose</strong>. Each
+              incident was reproduced, investigated in depth, documented with root cause and remediation, and used to
+              improve the system. These are not hypothetical exercises — they are full incident reports based on real
+              log output, real error messages, and real recovery steps.
+            </p>
+
+            <div class="phase-roadmap" role="list" aria-label="Project phases">
+              <div class="phase-item done" role="listitem">
+                <div class="phase-number">PHASE 1</div>
+                <div class="phase-title">Containerization</div>
+                <div class="phase-badge done">Completed</div>
+              </div>
+              <div class="phase-item done" role="listitem">
+                <div class="phase-number">PHASE 2</div>
+                <div class="phase-title">Reverse Proxy</div>
+                <div class="phase-badge done">Completed</div>
+              </div>
+              <div class="phase-item done" role="listitem">
+                <div class="phase-number">PHASE 3</div>
+                <div class="phase-title">CI Pipeline</div>
+                <div class="phase-badge done">Completed</div>
+              </div>
+              <div class="phase-item upcoming" role="listitem">
+                <div class="phase-number">PHASE 4</div>
+                <div class="phase-title">AWS Deployment</div>
+                <div class="phase-badge upcoming">Upcoming</div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="cs-visual" id="vote-img" role="button" tabindex="0"
+              aria-label="Expand VoteSecure architecture diagram">
+              <img src="assets/votesecure.png"
+                alt="VoteSecure architecture diagram — Browser to NGINX to FastAPI to PostgreSQL and Redis"
+                loading="lazy" style="filter:brightness(0.88) contrast(1.05);" />
+              <div class="cs-visual-caption">Architecture — Browser → NGINX → FastAPI → PostgreSQL + Redis</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Full-width incident board below the two-column grid -->
+        <div class="section-label" style="margin-top:2rem; margin-bottom:1rem;">6 documented incident reports — click to
+          expand</div>
+
+        <div class="incident-board" id="incident-board">
+
+          <!-- INC-001 -->
+          <div class="incident-card" id="inc-001">
+            <div class="incident-card-header" role="button" tabindex="0" aria-expanded="false"
+              aria-controls="inc-001-body">
+              <span class="inc-id">INC-001</span>
+              <span class="inc-title">PostgreSQL container stopped — DNS deregistered, hostname unresolvable</span>
+              <span class="inc-status">Resolved</span>
+              <span class="inc-chevron" aria-hidden="true">▼</span>
+            </div>
+            <div class="incident-card-body" id="inc-001-body" role="region">
+              <div class="inc-meta">
+                <span class="tag tag--amber">High</span>
+                <span class="tag">Phase 1</span>
+                <span class="tag">Intentional simulation</span>
+              </div>
+              <div class="inc-section">
+                <div class="inc-section-label">Symptom</div>
+                <div class="inc-section-content">All DB-dependent endpoints → <code>500</code>. Frontend loaded.
+                  <code>GET /api/auth/me</code> worked (JWT, no DB call). Redis rate limiting active. Container status
+                  showed all containers "Up" — monitoring would have shown green while users saw 500s.</div>
+              </div>
+              <div class="inc-section">
+                <div class="inc-section-label">Root cause</div>
+                <div class="inc-section-content">When a Docker container stops, it deregisters from the internal bridge
+                  network DNS. The hostname <code>postgres</code> became unresolvable — not "connection refused" but "no
+                  address associated with hostname." The backend never attempts TCP; DNS fails first.</div>
+              </div>
+              <div class="inc-section">
+                <div class="inc-section-label">Lesson</div>
+                <div class="inc-section-content">Docker DNS fails before TCP. Static health checks that return
+                  <code>200 OK</code> without testing the database are liveness probes — not readiness probes. A green
+                  health endpoint during a DB outage is actively misleading.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- INC-002 -->
+          <div class="incident-card" id="inc-002">
+            <div class="incident-card-header" role="button" tabindex="0" aria-expanded="false"
+              aria-controls="inc-002-body">
+              <span class="inc-id">INC-002</span>
+              <span class="inc-title">DB_HOST=localhost — total outage with zero infrastructure failure</span>
+              <span class="inc-status">Resolved</span>
+              <span class="inc-chevron" aria-hidden="true">▼</span>
+            </div>
+            <div class="incident-card-body" id="inc-002-body" role="region">
+              <div class="inc-meta">
+                <span class="tag"
+                  style="color:var(--red);border-color:rgba(239,68,68,0.25);background:var(--red-dim);">Critical</span>
+                <span class="tag">Phase 1</span>
+                <span class="tag">Misconfiguration</span>
+              </div>
+              <div class="inc-section">
+                <div class="inc-section-label">Symptom</div>
+                <div class="inc-section-content">Backend exited at startup — never accepted a single request. NGINX
+                  returned <code>502 Bad Gateway</code> on every API call. PostgreSQL, Redis, NGINX, and frontend were
+                  all fully healthy. Infrastructure was green; application was dead.</div>
+              </div>
+              <div class="inc-section">
+                <div class="inc-section-label">Root cause</div>
+                <div class="inc-section-content"><code>DB_HOST=localhost</code> set instead of
+                  <code>DB_HOST=postgres</code>. Inside a Docker container, <code>localhost</code> resolves to the
+                  container's own loopback (<code>127.0.0.1</code>). PostgreSQL was running in a separate network
+                  namespace, reachable only by its service name. DNS succeeded; TCP was refused. Backend startup event
+                  failed; Uvicorn exited.</div>
+              </div>
+              <div class="inc-section">
+                <div class="inc-section-label">Lesson</div>
+                <div class="inc-section-content">All infrastructure healthy + application down = configuration error.
+                  <code>502</code> means dead upstream (check container state). <code>500</code> means broken upstream
+                  (check application logs). The error code is the first debugging signal. <code>--force-recreate</code>
+                  is required for env var changes — <code>restart</code> does not apply them.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- INC-003 -->
+          <div class="incident-card" id="inc-003">
+            <div class="incident-card-header" role="button" tabindex="0" aria-expanded="false"
+              aria-controls="inc-003-body">
+              <span class="inc-id">INC-003</span>
+              <span class="inc-title">NGINX stripped WebSocket Upgrade headers — real-time feature silently
+                broken</span>
+              <span class="inc-status">Resolved</span>
+              <span class="inc-chevron" aria-hidden="true">▼</span>
+            </div>
+            <div class="incident-card-body" id="inc-003-body" role="region">
+              <div class="inc-meta">
+                <span class="tag tag--amber">High</span>
+                <span class="tag">Phase 2</span>
+                <span class="tag">Silent degradation</span>
+              </div>
+              <div class="inc-section">
+                <div class="inc-section-label">Symptom</div>
+                <div class="inc-section-content">Live Results page showed no real-time vote updates. All other features
+                  worked. No 500 errors. Dashboards green. Users would only discover the failure by noticing vote counts
+                  not updating — no alert would catch this.</div>
+              </div>
+              <div class="inc-section">
+                <div class="inc-section-label">Root cause</div>
+                <div class="inc-section-content">NGINX strips hop-by-hop headers (including <code>Upgrade</code> and
+                  <code>Connection</code>) before forwarding requests upstream. The browser sent a WebSocket upgrade
+                  request; NGINX removed the headers; the backend received a plain HTTP request and refused the upgrade.
+                  Fix: <code>proxy_set_header Upgrade $http_upgrade;</code> and <code>proxy_http_version 1.1;</code> in
+                  NGINX config.</div>
+              </div>
+              <div class="inc-section">
+                <div class="inc-section-label">Lesson</div>
+                <div class="inc-section-content">Silent partial failures are harder than total outages. Dashboards
+                  stayed green. The feature worked in local dev (no NGINX). Production added a proxy layer that broke
+                  one specific protocol. Test the full stack — not just the application in isolation.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- INC-004 -->
+          <div class="incident-card" id="inc-004">
+            <div class="incident-card-header" role="button" tabindex="0" aria-expanded="false"
+              aria-controls="inc-004-body">
+              <span class="inc-id">INC-004</span>
+              <span class="inc-title">CI build failed — Dockerfile error local cache had hidden for weeks</span>
+              <span class="inc-status">Resolved</span>
+              <span class="inc-chevron" aria-hidden="true">▼</span>
+            </div>
+            <div class="incident-card-body" id="inc-004-body" role="region">
+              <div class="inc-meta">
+                <span class="tag tag--amber">High</span>
+                <span class="tag">Phase 3</span>
+                <span class="tag">Intentional simulation</span>
+              </div>
+              <div class="inc-section">
+                <div class="inc-section-label">Symptom</div>
+                <div class="inc-section-content">CI pipeline failed at the Docker build step. The same
+                  <code>docker build</code> succeeded locally. The PR was blocked from merging.</div>
+              </div>
+              <div class="inc-section">
+                <div class="inc-section-label">Root cause</div>
+                <div class="inc-section-content">Local Docker build used a cached layer containing a previously valid
+                  dependency. CI builds from scratch with no cache — it hit an actual package resolution error that
+                  local cache had masked. The Dockerfile had a latent defect that only showed up in a clean build
+                  environment.</div>
+              </div>
+              <div class="inc-section">
+                <div class="inc-section-label">Lesson</div>
+                <div class="inc-section-content">CI is a clean-room environment — it proves your build is reproducible,
+                  not just that it worked on your machine. "Works locally" is not evidence of a correct Dockerfile.
+                  Periodically build with <code>--no-cache</code> in local dev to find hidden dependency issues before
+                  CI does.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- INC-005 -->
+          <div class="incident-card" id="inc-005">
+            <div class="incident-card-header" role="button" tabindex="0" aria-expanded="false"
+              aria-controls="inc-005-body">
+              <span class="inc-id">INC-005</span>
+              <span class="inc-title">Smoke test failed — wrong GitHub Secret name, silent misconfiguration</span>
+              <span class="inc-status">Resolved</span>
+              <span class="inc-chevron" aria-hidden="true">▼</span>
+            </div>
+            <div class="incident-card-body" id="inc-005-body" role="region">
+              <div class="inc-meta">
+                <span class="tag tag--amber">High</span>
+                <span class="tag">Phase 3</span>
+                <span class="tag">Misconfiguration</span>
+              </div>
+              <div class="inc-section">
+                <div class="inc-section-label">Symptom</div>
+                <div class="inc-section-content">CI smoke test step failed with an authentication error. The application
+                  code and Docker build were both correct. The pipeline passed tests and build, then failed at smoke
+                  test.</div>
+              </div>
+              <div class="inc-section">
+                <div class="inc-section-label">Root cause</div>
+                <div class="inc-section-content">The workflow referenced a GitHub Secret by an incorrect name. GitHub
+                  does not error on missing secrets — it silently injects an empty string. The application received an
+                  empty database password, failed to authenticate, and the smoke test correctly detected the failure.
+                </div>
+              </div>
+              <div class="inc-section">
+                <div class="inc-section-label">Lesson</div>
+                <div class="inc-section-content">Secret name mismatches are invisible until runtime. GitHub won't warn
+                  you. Add secret validation at pipeline startup — fail fast with a clear message if a required secret
+                  is empty, rather than letting downstream steps fail with cryptic errors.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- INC-006 -->
+          <div class="incident-card" id="inc-006">
+            <div class="incident-card-header" role="button" tabindex="0" aria-expanded="false"
+              aria-controls="inc-006-body">
+              <span class="inc-id">INC-006</span>
+              <span class="inc-title">Pipeline never triggered — wrong branch in workflow trigger</span>
+              <span class="inc-status">Resolved</span>
+              <span class="inc-chevron" aria-hidden="true">▼</span>
+            </div>
+            <div class="incident-card-body" id="inc-006-body" role="region">
+              <div class="inc-meta">
+                <span class="tag"
+                  style="color:var(--red);border-color:rgba(239,68,68,0.25);background:var(--red-dim);">Critical</span>
+                <span class="tag">Phase 3</span>
+                <span class="tag">Silent failure</span>
+              </div>
+              <div class="inc-section">
+                <div class="inc-section-label">Symptom</div>
+                <div class="inc-section-content">Code pushed. PR opened. Zero CI workflow runs appeared. No red status,
+                  no yellow status — nothing. The PR showed as ready to merge with no quality gate. Any broken code
+                  could have been merged without detection.</div>
+              </div>
+              <div class="inc-section">
+                <div class="inc-section-label">Root cause</div>
+                <div class="inc-section-content">Workflow trigger changed from <code>branches: [main]</code> to
+                  <code>branches: [production]</code>. <code>production</code> does not exist as a branch. The YAML is
+                  syntactically valid — GitHub parses it without error. The trigger simply never fires because no PR
+                  ever targets a <code>production</code> branch.</div>
+              </div>
+              <div class="inc-section">
+                <div class="inc-section-label">Lesson</div>
+                <div class="inc-section-content">A pipeline that fails tells you something is wrong. A pipeline that
+                  doesn't run tells you nothing — and you won't notice it isn't running. Validate CI trigger
+                  configuration on every workflow change. Require status checks in branch protection rules — a missing
+                  check should be as alarming as a failing one.</div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.incident-board -->
+
+        <div style="margin-top:1.5rem;" class="cs-tags">
+          <span class="tag">Docker Compose V2</span>
+          <span class="tag">NGINX</span>
+          <span class="tag">GitHub Actions</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">React 18</span>
+          <span class="tag tag--amber">Redis</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag" style="color:var(--red);border-color:rgba(239,68,68,0.2);">AES-256</span>
+          <span class="tag">JWT</span>
+          <span class="tag">Socket.IO</span>
+        </div>
+
+        <div class="cs-links">
+          <a href="https://github.com/Vasanth1602/votesecure-devops-journey" class="btn btn--outline"
+            id="votesecure-github" target="_blank" rel="noopener noreferrer">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+            </svg>
+            View Repository
+          </a>
+        </div>
+      </div>
+
+    </div><!-- /.container -->
+  </section>
+
+
+
+  <!-- ═══════════════════════════ HOW I WORK ════════════════════ -->
+  <section id="how-i-work">
+    <div class="container">
+      <div class="section-label">// Engineering Philosophy</div>
+      <h2 class="section-title">How I Work</h2>
+      <p class="section-desc">Principles I've developed from actually building and breaking these systems — not from
+        theory.</p>
+
+      <div class="principles-grid">
+
+        <div class="principle-item reveal">
+          <div class="principle-num">01</div>
+          <div class="principle-title">Infrastructure as Code first</div>
+          <p class="principle-desc">Infrastructure that can't be reproduced isn't infrastructure — it's a configuration
+            that happened to work once. Everything I provision starts with code: Terraform modules, docker-compose
+            files, Dockerfiles with explicit layers.</p>
+          <div class="principle-project">→ ML Deployment Platform, AWS DevOps Platform</div>
+        </div>
+
+        <div class="principle-item reveal reveal-d1">
+          <div class="principle-num">02</div>
+          <div class="principle-title">Automate the path to production</div>
+          <p class="principle-desc">Manual deployment steps accumulate hidden dependencies and silent assumptions. Each
+            manual step is a future incident waiting to happen. Automating the full path — including health check gates
+            — makes deployment safe to repeat.</p>
+          <div class="principle-project">→ GitHub Actions pipeline, 13-step orchestration</div>
+        </div>
+
+        <div class="principle-item reveal reveal-d2">
+          <div class="principle-num">03</div>
+          <div class="principle-title">Test failure, not only success</div>
+          <p class="principle-desc">A green pipeline proves the happy path works. It says nothing about what happens
+            when Postgres stops, a config value is wrong, or a dependency fails on a cold build. VoteSecure exists
+            specifically to answer those questions.</p>
+          <div class="principle-project">→ INC-001 through INC-006</div>
+        </div>
+
+        <div class="principle-item reveal reveal-d1">
+          <div class="principle-num">04</div>
+          <div class="principle-title">Document the incident</div>
+          <p class="principle-desc">Fixing the problem is necessary. Understanding why it happened is what makes the
+            system better. A root-cause analysis written after every incident — even a deliberate simulation — trains
+            the instinct to think at the right layer.</p>
+          <div class="principle-project">→ VoteSecure incident reports</div>
+        </div>
+
+        <div class="principle-item reveal reveal-d2">
+          <div class="principle-num">05</div>
+          <div class="principle-title">Observe before you trust</div>
+          <p class="principle-desc">A system is only as reliable as your ability to see what it's doing. CloudWatch
+            dashboards, alarms, custom metrics, log streams, and k6 load tests aren't afterthoughts — they're how you
+            verify the infrastructure you built actually works under real conditions.</p>
+          <div class="principle-project">→ AWS DevOps Platform observability stack</div>
+        </div>
+
+        <div class="principle-item reveal reveal-d1">
+          <div class="principle-num">06</div>
+          <div class="principle-title">Acknowledge trade-offs explicitly</div>
+          <p class="principle-desc">SSH-based CI/CD is simpler than SSM. A single EC2 instance is cheaper than Auto
+            Scaling. Single-request DB connections recover automatically but don't pool efficiently. Knowing the
+            trade-off and naming it is more useful than pretending it doesn't exist.</p>
+          <div class="principle-project">→ AWS DevOps Platform trade-offs</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ STACK ═════════════════════════ -->
+  <section id="stack">
+    <div class="container">
+      <div class="section-label">// Technical Stack</div>
+      <h2 class="section-title">Engineering Stack</h2>
+      <p class="section-desc">Tools I've used in real projects — not listed because they look good on a resume.</p>
+
+      <div class="stack-table reveal">
+        <div class="stack-row">
+          <div class="stack-category">Cloud</div>
+          <div class="stack-items">
+            <span class="tag tag--blue">AWS</span>
+            <span class="stack-divider">—</span>
+            <span class="tag">EC2</span>
+            <span class="tag">ECS Fargate</span>
+            <span class="tag">VPC</span>
+            <span class="tag">ALB</span>
+            <span class="tag">RDS</span>
+            <span class="tag">S3</span>
+            <span class="tag">IAM</span>
+            <span class="tag">CloudFront</span>
+            <span class="tag">CloudWatch</span>
+            <span class="tag">Secrets Manager</span>
+          </div>
+        </div>
+        <div class="stack-row">
+          <div class="stack-category">Infrastructure</div>
+          <div class="stack-items">
+            <span class="tag">Terraform</span>
+            <span class="stack-divider">—</span>
+            <span class="tag">Modular IaC</span>
+            <span class="tag">Remote State</span>
+            <span class="tag">Workspaces</span>
+            <span class="tag">tfvars</span>
+          </div>
+        </div>
+        <div class="stack-row">
+          <div class="stack-category">Containers</div>
+          <div class="stack-items">
+            <span class="tag">Docker</span>
+            <span class="tag">Docker Compose V2</span>
+            <span class="tag">Multi-stage Builds</span>
+            <span class="tag">GHCR</span>
+            <span class="tag">ECR</span>
+            <span class="tag tag--amber">Kubernetes</span>
+            <span class="tag tag--amber">fundamentals</span>
+          </div>
+        </div>
+        <div class="stack-row">
+          <div class="stack-category">Delivery</div>
+          <div class="stack-items">
+            <span class="tag">GitHub Actions</span>
             <span class="tag">Jenkins</span>
+            <span class="tag">Groovy Pipelines</span>
+            <span class="tag">Health Check Gates</span>
+            <span class="tag">Smoke Testing</span>
+          </div>
+        </div>
+        <div class="stack-row">
+          <div class="stack-category">Security</div>
+          <div class="stack-items">
+            <span class="tag tag--amber">SAST</span>
+            <span class="tag tag--amber">SCA</span>
             <span class="tag tag--amber">CVE Analysis</span>
             <span class="tag tag--amber">OWASP Top 10</span>
-            <span class="tag">True/False Positive Triage</span>
+            <span class="tag">SonarQube</span>
+            <span class="tag">Snyk</span>
+            <span class="tag">OWASP Dep-Check</span>
+            <span class="tag">Trivy</span>
+          </div>
+        </div>
+        <div class="stack-row">
+          <div class="stack-category">Observability</div>
+          <div class="stack-items">
+            <span class="tag tag--green">CloudWatch</span>
+            <span class="tag tag--green">Prometheus</span>
+            <span class="tag tag--green">Grafana</span>
+            <span class="tag tag--green">k6</span>
+            <span class="tag">Custom Metrics</span>
+            <span class="tag">Log Streams</span>
+          </div>
+        </div>
+        <div class="stack-row">
+          <div class="stack-category">Automation</div>
+          <div class="stack-items">
+            <span class="tag">Python</span>
+            <span class="tag">Bash</span>
+            <span class="tag">boto3</span>
+            <span class="tag">Paramiko</span>
+            <span class="tag">NGINX</span>
+            <span class="tag">Gunicorn</span>
+            <span class="tag">Linux (Ubuntu)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ MORE WORK ═════════════════════ -->
+  <section id="more-work">
+    <div class="container">
+      <div class="section-label">// Additional Work</div>
+      <h2 class="section-title">More Experiments</h2>
+      <p class="section-desc">Smaller projects and exercises that contributed to the DevOps / Cloud story.</p>
+
+      <div class="more-work-grid">
+
+        <div class="more-work-item reveal">
+          <div class="mw-category">CI/CD · Jenkins</div>
+          <div class="mw-title">Jenkins Workflow Demo</div>
+          <p class="mw-desc">Declarative Jenkins pipeline: Python virtualenv setup, unit tests, conditional branch-aware
+            deployment, and automated PR merge via GitHub API using Groovy scripting.</p>
+          <div class="mw-tech">
+            <span class="tag">Jenkins</span>
+            <span class="tag">Groovy</span>
+            <span class="tag">GitHub API</span>
+            <span class="tag">Python</span>
+          </div>
+          <a href="https://github.com/Vasanth1602/jenkins_workflow" class="mw-link" target="_blank"
+            rel="noopener noreferrer" id="mw-jenkins">View on GitHub →</a>
+        </div>
+
+        <div class="more-work-item reveal reveal-d1">
+          <div class="mw-category">Cloud · AWS · Python</div>
+          <div class="mw-title">Cloud Resource Audit Platform</div>
+          <p class="mw-desc">AWS governance tool using boto3 to scan EC2, EBS, S3, RDS, EIP, Snapshots, ALB, and NAT
+            Gateways across regions. 20+ deterministic rules, ranked cost-savings recommendations, CSV/JSON/HTML export.
+          </p>
+          <div class="mw-tech">
+            <span class="tag">boto3</span>
+            <span class="tag">Cost Explorer</span>
+            <span class="tag">React</span>
+            <span class="tag">Flask</span>
+          </div>
+          <a href="https://github.com/Vasanth1602/Cloud-Resource-Audit-Cost-Optimization-Platform" class="mw-link"
+            target="_blank" rel="noopener noreferrer" id="mw-cloud-audit">View on GitHub →</a>
+        </div>
+
+        <div class="more-work-item reveal reveal-d2">
+          <div class="mw-category">Linux · NGINX · Deployment</div>
+          <div class="mw-title">Zero-Downtime Deployment via Symlinks</div>
+          <p class="mw-desc">Blue-green style deployment using filesystem symlinks and NGINX configuration reloads — no
+            container orchestrator required. Demonstrates the mechanism behind zero-downtime at the OS level.</p>
+          <div class="mw-tech">
+            <span class="tag">NGINX</span>
+            <span class="tag">Linux</span>
+            <span class="tag">Bash</span>
+          </div>
+          <a href="https://github.com/Vasanth1602/DevopsTasks" class="mw-link" target="_blank" rel="noopener noreferrer"
+            id="mw-zero-downtime">View on GitHub →</a>
+        </div>
+
+        <div class="more-work-item reveal reveal-d1">
+          <div class="mw-category">Kubernetes · Static Deployment</div>
+          <div class="mw-title">Static App Deployment to Kubernetes</div>
+          <p class="mw-desc">Deploy a static page to a local Kubernetes cluster using Deployment and Service manifests.
+            Demonstrates pod scheduling, replica management, and service exposure fundamentals.</p>
+          <div class="mw-tech">
+            <span class="tag">Kubernetes</span>
+            <span class="tag">kubectl</span>
+            <span class="tag">NGINX</span>
+          </div>
+          <a href="https://github.com/Vasanth1602/DevopsTasks" class="mw-link" target="_blank" rel="noopener noreferrer"
+            id="mw-kubernetes">View on GitHub →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ EXPERIENCE ════════════════════ -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-label">// Experience</div>
+      <h2 class="section-title">Where I've Worked</h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-meta">
+            <div class="timeline-date">Jul 2026 — Present</div>
+            <div class="timeline-company">
+              <strong>SecIQ Technologies LLP</strong>
+              Remote · Bengaluru
+              <div class="timeline-sub">DevSecOps Internship</div>
+            </div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-role">DevSecOps Intern</div>
+            <ul class="timeline-bullets">
+              <li>Performed end-to-end SAST triage using SonarQube across Python, Java, and JavaScript projects —
+                validating True/False Positives, mapping to OWASP Top 10 categories, and writing developer-facing
+                remediation recommendations.</li>
+              <li>Triaged SCA and dependency vulnerabilities using OWASP Dependency-Check and Snyk — analyzing CVEs by
+                CVSS score, affected package versions, and validating findings against NVD, Debian Security Tracker, and
+                Secure Software databases.</li>
+              <li>Configured OWASP Dependency-Check in a Jenkins pipeline to automate dependency scanning and structured
+                report generation as part of client security assessment workflows.</li>
+              <li>Performed Trivy-based container image vulnerability triage during client security assessments —
+                distinguishing exploitable CVEs from noise across OS packages and application dependencies.</li>
+            </ul>
+            <div class="timeline-tools">
+              <span class="tag tag--amber">SonarQube</span>
+              <span class="tag tag--amber">Snyk</span>
+              <span class="tag tag--amber">OWASP Dep-Check</span>
+              <span class="tag tag--amber">Trivy</span>
+              <span class="tag">Jenkins</span>
+              <span class="tag tag--amber">CVE Analysis</span>
+              <span class="tag tag--amber">OWASP Top 10</span>
+              <span class="tag">True/False Positive Triage</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal reveal-d2">
+          <div class="timeline-meta">
+            <div class="timeline-date">Jan 2026 — Apr 2026</div>
+            <div class="timeline-company">
+              <strong>Codec Technologies Pvt. Ltd.</strong>
+              Remote
+              <div class="timeline-sub">AICTE &amp; ICAC Approved</div>
+            </div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-role">Cloud Computing Intern</div>
+            <ul class="timeline-bullets">
+              <li>Deployed and configured cloud infrastructure on AWS (EC2, S3, VPC) during a 3-month structured
+                internship program.</li>
+              <li>Implemented Infrastructure as Code with Terraform and containerization with Docker to automate
+                deployment workflows.</li>
+              <li>Contributed to CI/CD pipeline integration and secure infrastructure practices in a remote team
+                environment.</li>
+            </ul>
+            <div class="timeline-tools">
+              <span class="tag">AWS EC2</span>
+              <span class="tag">S3</span>
+              <span class="tag">VPC</span>
+              <span class="tag">Terraform</span>
+              <span class="tag">Docker</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ EDUCATION ════════════════════ -->
+  <section id="education">
+    <div class="container">
+      <div class="section-label">// Education</div>
+      <h2 class="section-title">Education &amp; Certifications</h2>
+
+      <div class="edu-grid reveal">
+        <div class="edu-item">
+          <div class="edu-degree">Master of Science (M.Sc.)</div>
+          <div class="edu-field">Data Science</div>
+          <div class="edu-school">Periyar University · Salem, Tamil Nadu</div>
+          <div class="edu-meta">
+            <span class="edu-date">Aug 2024 – Apr 2026</span>
+            <span class="edu-cgpa">7.5 / 10</span>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-degree">Bachelor of Science (B.Sc.)</div>
+          <div class="edu-field">Statistics</div>
+          <div class="edu-school">Presidency College (Autonomous), University of Madras · Chennai</div>
+          <div class="edu-meta">
+            <span class="edu-date">Jun 2021 – Apr 2024</span>
+            <span class="edu-cgpa">8.47 / 10</span>
           </div>
         </div>
       </div>
 
-      <div class="timeline-item reveal reveal-d2">
-        <div class="timeline-meta">
-          <div class="timeline-date">Jan 2026 — Apr 2026</div>
-          <div class="timeline-company">
-            <strong>Codec Technologies Pvt. Ltd.</strong>
-            Remote
-            <div class="timeline-sub">AICTE &amp; ICAC Approved</div>
+      <div class="cert-row reveal">
+        <div>
+          <div class="cert-name">Continuous Integration and Continuous Delivery (CI/CD)</div>
+          <div class="cert-issuer">IBM · Coursera · Completed March 2026</div>
+        </div>
+        <a href="https://coursera.org/verify/H2U29QTASICQ" class="cert-verify" id="cert-verify" target="_blank"
+          rel="noopener noreferrer">✓ Verify</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ CONTACT ══════════════════════ -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-label">// Contact</div>
+      <h2 class="section-title">Let's Talk</h2>
+
+      <div class="contact-layout">
+        <div class="contact-info reveal">
+          <p class="contact-tagline">
+            Open to DevOps, Cloud, and DevSecOps roles. <br>
+            Also happy to talk infrastructure, incident analysis, or anything in this stack.
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:a.vasanth1602@gmail.com" class="contact-link-item" id="contact-email" data-copy-email>
+              <span class="contact-link-label">Email</span>
+              <span class="contact-link-value">a.vasanth1602@gmail.com</span>
+            </a>
+            <a href="https://github.com/Vasanth1602" class="contact-link-item" id="contact-github" target="_blank"
+              rel="noopener noreferrer">
+              <span class="contact-link-label">GitHub</span>
+              <span class="contact-link-value">github.com/Vasanth1602</span>
+            </a>
+            <a href="https://www.linkedin.com/in/vasanth1602" class="contact-link-item" id="contact-linkedin"
+              target="_blank" rel="noopener noreferrer">
+              <span class="contact-link-label">LinkedIn</span>
+              <span class="contact-link-value">linkedin.com/in/vasanth1602</span>
+            </a>
+            <a href="tel:+916369930089" class="contact-link-item" id="contact-phone">
+              <span class="contact-link-label">Phone</span>
+              <span class="contact-link-value">+91 63699 30089</span>
+            </a>
           </div>
         </div>
-        <div class="timeline-content">
-          <div class="timeline-role">Cloud Computing Intern</div>
-          <ul class="timeline-bullets">
-            <li>Deployed and configured cloud infrastructure on AWS (EC2, S3, VPC) during a 3-month structured internship program.</li>
-            <li>Implemented Infrastructure as Code with Terraform and containerization with Docker to automate deployment workflows.</li>
-            <li>Contributed to CI/CD pipeline integration and secure infrastructure practices in a remote team environment.</li>
-          </ul>
-          <div class="timeline-tools">
-            <span class="tag">AWS EC2</span>
-            <span class="tag">S3</span>
-            <span class="tag">VPC</span>
-            <span class="tag">Terraform</span>
-            <span class="tag">Docker</span>
+
+        <form class="contact-form reveal reveal-d2" id="contact-form" action="https://formspree.io/f/xaeyyrdn"
+          method="POST" novalidate>
+          <div class="form-group">
+            <label for="contact-name">Name</label>
+            <input type="text" id="contact-name" name="name" placeholder="Your name" required autocomplete="name" />
           </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════ EDUCATION ════════════════════ -->
-<section id="education">
-  <div class="container">
-    <div class="section-label">// Education</div>
-    <h2 class="section-title">Education &amp; Certifications</h2>
-
-    <div class="edu-grid reveal">
-      <div class="edu-item">
-        <div class="edu-degree">Master of Science (M.Sc.)</div>
-        <div class="edu-field">Data Science</div>
-        <div class="edu-school">Periyar University · Salem, Tamil Nadu</div>
-        <div class="edu-meta">
-          <span class="edu-date">Aug 2024 – Apr 2026</span>
-          <span class="edu-cgpa">7.5 / 10</span>
-        </div>
-      </div>
-      <div class="edu-item">
-        <div class="edu-degree">Bachelor of Science (B.Sc.)</div>
-        <div class="edu-field">Statistics</div>
-        <div class="edu-school">Presidency College (Autonomous), University of Madras · Chennai</div>
-        <div class="edu-meta">
-          <span class="edu-date">Jun 2021 – Apr 2024</span>
-          <span class="edu-cgpa">8.47 / 10</span>
-        </div>
+          <div class="form-group">
+            <label for="contact-email-field">Email</label>
+            <input type="email" id="contact-email-field" name="email" placeholder="your@email.com" required
+              autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" placeholder="What would you like to discuss?"
+              required></textarea>
+          </div>
+          <button type="submit" class="btn-submit" id="contact-submit">Send Message</button>
+          <p id="form-status" aria-live="polite"></p>
+        </form>
       </div>
     </div>
+  </section>
 
-    <div class="cert-row reveal">
-      <div>
-        <div class="cert-name">Continuous Integration and Continuous Delivery (CI/CD)</div>
-        <div class="cert-issuer">IBM · Coursera · Completed March 2026</div>
-      </div>
-      <a href="https://coursera.org/verify/H2U29QTASICQ" class="cert-verify" id="cert-verify" target="_blank" rel="noopener noreferrer">✓ Verify</a>
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════ -->
+  <footer>
+    <div class="footer-left">
+      Vasanth A · DevOps &amp; Cloud Engineer · Tamil Nadu, India
     </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════ CONTACT ══════════════════════ -->
-<section id="contact">
-  <div class="container">
-    <div class="section-label">// Contact</div>
-    <h2 class="section-title">Let's Talk</h2>
-
-    <div class="contact-layout">
-      <div class="contact-info reveal">
-        <p class="contact-tagline">
-          Open to DevOps, Cloud, and DevSecOps roles. <br>
-          Also happy to talk infrastructure, incident analysis, or anything in this stack.
-        </p>
-
-        <div class="contact-links">
-          <a href="mailto:a.vasanth1602@gmail.com" class="contact-link-item" id="contact-email" data-copy-email>
-            <span class="contact-link-label">Email</span>
-            <span class="contact-link-value">a.vasanth1602@gmail.com</span>
-          </a>
-          <a href="https://github.com/Vasanth1602" class="contact-link-item" id="contact-github" target="_blank" rel="noopener noreferrer">
-            <span class="contact-link-label">GitHub</span>
-            <span class="contact-link-value">github.com/Vasanth1602</span>
-          </a>
-          <a href="https://www.linkedin.com/in/vasanth1602" class="contact-link-item" id="contact-linkedin" target="_blank" rel="noopener noreferrer">
-            <span class="contact-link-label">LinkedIn</span>
-            <span class="contact-link-value">linkedin.com/in/vasanth1602</span>
-          </a>
-          <a href="tel:+916369930089" class="contact-link-item" id="contact-phone">
-            <span class="contact-link-label">Phone</span>
-            <span class="contact-link-value">+91 63699 30089</span>
-          </a>
-        </div>
-      </div>
-
-      <form class="contact-form reveal reveal-d2" id="contact-form" action="https://formspree.io/f/xaeyyrdn" method="POST" novalidate>
-        <div class="form-group">
-          <label for="contact-name">Name</label>
-          <input type="text" id="contact-name" name="name" placeholder="Your name" required autocomplete="name" />
-        </div>
-        <div class="form-group">
-          <label for="contact-email-field">Email</label>
-          <input type="email" id="contact-email-field" name="email" placeholder="your@email.com" required autocomplete="email" />
-        </div>
-        <div class="form-group">
-          <label for="contact-message">Message</label>
-          <textarea id="contact-message" name="message" placeholder="What would you like to discuss?" required></textarea>
-        </div>
-        <button type="submit" class="btn-submit" id="contact-submit">Send Message</button>
-        <p id="form-status" aria-live="polite"></p>
-      </form>
+    <div class="footer-right">
+      <a href="assets/Vasanth_A_DevOps_Resume.pdf" download>Resume</a>
+      <a href="https://github.com/Vasanth1602" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/vasanth1602" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- ═══════════════════════════ FOOTER ═══════════════════════ -->
-<footer>
-  <div class="footer-left">
-    Vasanth A · DevOps &amp; Cloud Engineer · Tamil Nadu, India
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close image">×</button>
+    <img src="" alt="" id="lightbox-img" />
   </div>
-  <div class="footer-right">
-    <a href="assets/resume.pdf" download>Resume</a>
-    <a href="https://github.com/Vasanth1602" target="_blank" rel="noopener noreferrer">GitHub</a>
-    <a href="https://www.linkedin.com/in/vasanth1602" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-  </div>
-</footer>
 
-<!-- Lightbox -->
-<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
-  <button class="lightbox-close" id="lightbox-close" aria-label="Close image">×</button>
-  <img src="" alt="" id="lightbox-img" />
-</div>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
