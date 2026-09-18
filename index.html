@@ -10,14 +10,14 @@
   <meta name="keywords"
     content="DevOps Engineer, Cloud Engineer, AWS, Terraform, Docker, GitHub Actions, CI/CD, DevSecOps" />
   <meta name="author" content="Vasanth A" />
-  <link rel="canonical" href="https://vasanth1602.github.io" />
+  <link rel="canonical" href="https://vasanthdev.me/" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Vasanth A — DevOps & Cloud Engineer" />
   <meta property="og:description"
     content="I build infrastructure, automate delivery, and investigate what happens when systems fail." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://vasanth1602.github.io" />
+  <meta property="og:url" content="https://vasanthdev.me/" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary" />
@@ -389,6 +389,7 @@
               <span class="tag">GHCR</span>
               <span class="tag">Flask</span>
               <span class="tag tag--green">k6</span>
+              <span class="tag">Checkov</span>
             </div>
 
             <div class="cs-links">
@@ -409,6 +410,10 @@
                 alt="AWS DevOps Platform infrastructure architecture showing VPC, EC2, CloudWatch, and CI/CD flow"
                 loading="lazy" />
               <div class="cs-visual-caption">AWS infrastructure — Terraform-provisioned stack</div>
+            </div>
+            <div class="cs-tradeoffs">
+              <div class="cs-tradeoffs-label">IaC security validation</div>
+              <p>Terraform configuration was scanned with Checkov to identify policy violations. Selected findings were remediated and the configuration was rescanned to verify that the targeted controls passed.</p>
             </div>
             <div class="cs-tradeoffs" style="margin-bottom:0;">
               <div class="cs-tradeoffs-label">Engineering trade-off</div>
@@ -877,12 +882,14 @@
           <div class="stack-items">
             <span class="tag tag--amber">SAST</span>
             <span class="tag tag--amber">SCA</span>
+            <span class="tag tag--amber">IaC Security</span>
             <span class="tag tag--amber">CVE Analysis</span>
             <span class="tag tag--amber">OWASP Top 10</span>
             <span class="tag">SonarQube</span>
             <span class="tag">Snyk</span>
-            <span class="tag">OWASP Dep-Check</span>
+            <span class="tag">OWASP Dependency-Check</span>
             <span class="tag">Trivy</span>
+            <span class="tag">Checkov</span>
           </div>
         </div>
         <div class="stack-row">
@@ -1010,8 +1017,7 @@
               <li>Triaged SCA and dependency vulnerabilities using OWASP Dependency-Check and Snyk — analyzing CVEs by
                 CVSS score, affected package versions, and validating findings against NVD, Debian Security Tracker, and
                 Secure Software databases.</li>
-              <li>Configured OWASP Dependency-Check in a Jenkins pipeline to automate dependency scanning and structured
-                report generation as part of client security assessment workflows.</li>
+              <li>Integrated SonarQube and OWASP Dependency-Check into a Jenkins Declarative Pipeline to automate SAST/SCA scanning, report generation, and SonarQube Quality Gate validation for a Java/Maven application.</li>
               <li>Performed Trivy-based container image vulnerability triage during client security assessments —
                 distinguishing exploitable CVEs from noise across OS packages and application dependencies.</li>
             </ul>
