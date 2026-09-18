@@ -2,7 +2,7 @@
 
 Personal portfolio website built with HTML, Vanilla CSS, and JavaScript.
 
-**Live site:** https://vasanth1602.github.io
+**Live site:** https://vasanthdev.me/
 
 ## Stack
 
